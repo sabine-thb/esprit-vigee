@@ -4,4 +4,95 @@ header{
     background-position: left;
     width:100vw;
     height:100vh;
+    min-height:100vh;
+    /* overflow: hidden; */
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    
+    
 }
+
+section{
+padding:30px 40px 30px 40px;
+}
+
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0px;
+    padding: 30px 20px 0px 20px;
+
+}
+
+.logo{
+    width:160px;
+    height:auto;
+    margin:auto;
+}
+
+.headerText{
+    padding: 0px 20px 0px 20px;
+}
+
+.descrExpo{
+    font-size:1rem;
+    width: fit-content;
+    color:white;
+    padding:20px 0px 20px 0px;
+    border-bottom:white 1px solid;
+    margin:0;
+}
+
+.title{
+    font-family: "Tan-Pearl", sans-serif;
+    font-size:3rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+    margin-bottom:0;
+}
+
+.accFlex{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+}
+
+/*Je mets en place le slider de la poage d'accuei*/
+
+.slider-visible{ /* carré visible*/
+    flex-grow: 1; 
+    width:auto;
+    /* overflow: hidden; */
+    height: 100%;
+}
+
+.slider-total{
+    height:100%;
+    display: flex;
+    position: relative;
+    /* left: -100vw; */
+    /*et on va bouger son left en JS pour le déplacer*/
+    transition: left 0.6s ease-out;
+}
+
+.slide { /*slides */
+     /*On met la même valeur pour la hauteur du js-slider*/
+    width:100vw !important;
+    height: 100%;
+    position: relative;
+    /* background-color: aqua;
+    border:black solid 1px; */
+    flex-shrink: 0;
+}
+
+.photoSlider{
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:100%;
+}
+
+
