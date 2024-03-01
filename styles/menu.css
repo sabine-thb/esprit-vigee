@@ -1,19 +1,21 @@
 body {
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: #dedede;
 }
 a {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Louis-Bold', sans-serif;
+    padding:20px;
+
 }
-h1 {
-    font-family: 'PT Sans', sans-serif;
+/* h1 {
+    font-family: 'Open-sans', sans-serif;
     font-size: 3rem;
 }
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
-}
+} */
 .text {
     max-width: 800px;
     margin: 0 auto;

@@ -1,8 +1,43 @@
-body{
-    margin:0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*Je mets en place les polices de tout le site*/
+
+@font-face {
+    font-family:"Tan-Pearl" ;
+    src: url(./fonts/TAN-PEARL.woff2) format(woff2);
 }
 
 @font-face {
-    font-family: "";
-    src: url();
+    font-family:"Cinzel" ;
+    src: url(./fonts/CinzelDecorative-Regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family:"PromptRegular" ;
+    src: url(./fonts/Prompt-Regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family:"PromptBold" ;
+    src: url(./fonts/Prompt-SemiBold.woff2) format(woff2);
+}
+
+@font-face {
+    font-family:"Louis-Regular" ;
+    src: url(./fonts/Louis\ George\ Cafe.woff2) format(woff2);
+}
+
+@font-face {
+    font-family:"Louis-Bold" ;
+    src: url(./fonts/Louis\ George\ Cafe\ Bold.woff2) format(woff2);
+}
+
+body{
+    margin:0;
+    font-family: "promptRegular", sans-serif;
+    font-size:1rem;
 }

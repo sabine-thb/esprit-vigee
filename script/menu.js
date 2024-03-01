@@ -14,14 +14,12 @@ $(document).ready(function () {
 
 // Faire en sorte de chnager la couleur de la croix quand le menu birger est ouvert
 
-
-// Sélection de l'élément avec la classe .mobile-nav-button
 var mobileNavButton = document.querySelector('.mobile-nav-button');
+var mobileNavMenu = document.querySelector('.mobile-menu');
 
 // Compteur pour suivre le nombre de clics
 var clickCount = 0;
 
-// Ajout d'un écouteur d'événement pour le clic sur le bouton
 mobileNavButton.addEventListener('click', function() {
     // Sélection de tous les éléments enfants de mobileNavButton
     var children = mobileNavButton.querySelectorAll('*');
