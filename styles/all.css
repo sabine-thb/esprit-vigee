@@ -40,6 +40,20 @@ body{
     margin:0;
     font-family: "promptRegular", sans-serif;
     font-size:1rem;
+    overflow-x: hidden;
+}
+
+header{
+    height:100vh;
+    min-height:100vh;
+    position: relative;
+    /* display:flex;
+    flex-direction: column;  */
+}
+
+header{
+    overflow: hidden;
+
 }
 
 
