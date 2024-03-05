@@ -14,12 +14,8 @@ header{
     overflow: hidden;
     position: relative;
     display:flex;
-    flex-direction: column;
-    
-    
+    flex-direction: column; 
 }
-
-
 
 
 .headerText{
@@ -118,11 +114,11 @@ header{
     filter: blur(1px);
   }
   
-  .container {
+  /* .container {
     margin: 0 auto;
     height: 90vh;
     position: relative;
-  }
+  } */
 
 
 /*Je mets en place la section 1 de ma page d'accueil*/
@@ -139,9 +135,9 @@ header{
         font-size:5rem;
     }
 
-    header{
+    /* header{
         display:block;
-    }
+    } */
 
     .headerText{
         padding: 25px 55px 0px 55px;
