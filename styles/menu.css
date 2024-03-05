@@ -1,8 +1,8 @@
 body {
     width: 100%;
     /* overflow: hidden; */
-    background: #dedede;
 }
+
 a {
     font-family: 'Louis-Bold', sans-serif;
     padding:20px;
@@ -157,6 +157,9 @@ p {
 .logo{
     width:160px;
     height:auto;
+}
+
+.logoContainer{
     margin:auto;
 }
 
