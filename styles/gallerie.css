@@ -3,18 +3,24 @@
 *::after {
   box-sizing: border-box;
 }
+
 body{
 background-image: url(./images/backgallerie.png); 
 background-repeat: no-repeat;
 background-size: cover;
 background-position: left;
-width: 100%;
 display: flex;
 flex-direction:column ;
 }
-/* header{
+
+header{
     overflow: hidden;
-} */
+    height:100vh;
+    min-height:100vh;
+    position: relative;
+    display:flex;
+    flex-direction: column; 
+}
 
 .title{
     font-family: "Tan-Pearl", sans-serif;

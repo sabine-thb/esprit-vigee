@@ -42,11 +42,6 @@ header{
     margin-top:25px;
 }
 
-.accFlex{
-    display: flex;
-    flex-direction: column;
-    height:100%;
-}
 
 /*Je mets en place le slider de la poage d'accuei*/
 
@@ -114,8 +109,10 @@ header{
 
 
 .section1{
+    width:100%;
     min-height: 100vh;
-    background-color: azure;
+    background-image:url(./images/fondSection.jpg) ;
+
 }
 
 
