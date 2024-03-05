@@ -41,3 +41,22 @@ body{
     font-family: "promptRegular", sans-serif;
     font-size:1rem;
 }
+
+
+/*Je mets le CSS de l'animation du header*/
+
+.firefly {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: #f2fda3;
+    box-shadow: 0px 0px 10px 1px rgba(253,219,163,.6);
+    border-radius: 50%;
+    filter: blur(1px);
+  }
+  
+  /* .container {
+    margin: 0 auto;
+    height: 90vh;
+    position: relative;
+  } */
