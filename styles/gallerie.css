@@ -9,6 +9,8 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: left;
 width: 100%;
+display: flex;
+flex-direction:column ;
 }
 /* header{
     overflow: hidden;
