@@ -122,3 +122,48 @@ p {
     right: 0;
     opacity: 1;
 }
+
+/*Je mets en place le menu au format desktop*/
+
+
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0px;
+    padding: 30px 20px 0px 20px;
+
+}
+
+.nav2{
+    display:none;
+    padding: 30px 55px 0px 55px;
+}
+
+.navLink{
+    font-family: "PromptBold", sans-serif;
+    color:white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding:0;
+}
+
+.logo{
+    width:160px;
+    height:auto;
+    margin:auto;
+}
+
+@media(min-width:1100px){
+
+    .nav1{
+        display:none;
+    }
+
+    .nav2{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
