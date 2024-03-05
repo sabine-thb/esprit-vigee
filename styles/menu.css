@@ -173,5 +173,16 @@ p {
         display:flex;
         justify-content: space-between;
         align-items: center;
+        padding: 30px 55px 0px 55px;
     }
+
+    
+}
+@media(min-width:1200px){
+
+    .nav2{
+        padding: 30px 100px 0px 100px;
+    }
+
+    
 }
