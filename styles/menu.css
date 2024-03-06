@@ -160,7 +160,7 @@ p {
     font-family: "PromptBold", sans-serif;
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     padding: 0;
     transition: transform 0.3s ease-in-out;
@@ -171,7 +171,7 @@ p {
 }
 
 .logo {
-    width: 160px;
+    width: 130px;
     height: auto;
 }
 
