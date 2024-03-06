@@ -36,6 +36,11 @@
     src: url(./fonts/Louis\ George\ Cafe\ Bold.woff2) format(woff2);
 }
 
+@font-face {
+    font-family: "Parisienne";
+    src: url(./fonts/Parisienne-Regular.woff2) format(woff2);
+}
+
 
 /*Je définis les variables de couleur qui vont être utilisées dans le site*/
 
