@@ -1,103 +1,105 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-header{
-    background-image:url(./images/fondAccueil.jpg) ;
+header {
+    background-image: url(./images/fondAccueil.jpg);
     background-size: cover;
     background-position: left;
-    height:100vh;
-    min-height:100vh;
+    height: 100vh;
+    min-height: 100vh;
     position: relative;
-    display:flex;
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
 }
 
 
-.headerText{
+.headerText {
     padding: 0px 20px 0px 20px;
 }
 
-.descrExpo{
-    font-size:1rem;
+.descrExpo {
+    font-size: 1rem;
     width: fit-content;
-    color:white;
-    padding:20px 0px 20px 0px;
-    border-bottom:white 1px solid;
-    margin:0;
+    color: white;
+    padding: 20px 0px 20px 0px;
+    border-bottom: white 1px solid;
+    margin: 0;
 }
 
-.title{
+.title {
     font-family: "Tan-Pearl", sans-serif;
     font-weight: 300;
-    font-size:3rem;
+    font-size: 3rem;
     text-transform: uppercase;
     color: white;
     letter-spacing: 5px;
-    margin-bottom:0;
-    margin-top:25px;
+    margin-bottom: 0;
+    margin-top: 25px;
 }
 
 
 /*Je mets en place le slider de la poage d'accuei*/
 
-.slider-visible{ /* carré visible*/
-    flex-grow: 1; 
-    width:auto;
+.slider-visible {
+    /* carré visible*/
+    flex-grow: 1;
+    width: auto;
     /* overflow: hidden; */
-    position:relative;
+    position: relative;
     flex-shrink: 0;
 }
 
-.slider-total{
-    height:100%;
+.slider-total {
+    height: 100%;
     display: flex;
     position: relative;
     left: -100%;
     /*et on va bouger son left en JS pour le déplacer*/
-    
+
 }
 
-.slide { /*slides */
-     /*On met la même valeur pour la hauteur du js-slider*/
-    width:100%;
+.slide {
+    /*slides */
+    /*On met la même valeur pour la hauteur du js-slider*/
+    width: 100%;
     height: auto;
     position: relative;
     flex-shrink: 0;
 }
 
-.photoSlider{
-    position:absolute;
-    top:0px;
-    right:0px;
-    height:100%;
+.photoSlider {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
 }
 
-.arrow{
-    width:100px;
-    height:100px;
-    position:absolute;
-    bottom:50px;
+.arrow {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 50px;
     padding: 20px;
     border-radius: 50%;
     border: solid 1px white;
     cursor: pointer;
-    transition:width 0.3s ease-in-out;
-    transition:padding 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out;
 }
 
-.arrow:hover{
+.arrow:hover {
     padding: 25px;
 }
 
-.arrow.left{
-    left:20px;
+.arrow.left {
+    left: 20px;
 }
 
-.arrow.right{
-    right:20px;
+.arrow.right {
+    right: 20px;
     transform: rotate(180deg);
 }
 
@@ -106,141 +108,384 @@ header{
 /*Je mets en place la section 1 de ma page d'accueil*/
 
 
-.section1{
-    width:100%;
+.section1 {
+    width: 100%;
     min-height: 100vh;
-    background-image:url(./images/fondSection.jpg) ;
+    background-image: url(./images/fondSection.jpg);
     background-size: cover;
     /* background-position: top; */
     background-position: center;
     position: relative;
-    padding:30px 20px 250px 20px;
+    padding: 30px 40px 100px 40px;
 
 }
 
-.gradient{ /*ici le gardient blanc*/
-    background: linear-gradient(0deg, rgba(251, 249, 241, 1) 0%, rgba(205, 220, 57, 0) 61%, rgba(238, 130, 238, 0) 100%);
-    background: linear-gradient(0deg rgba(251, 249, 241, 0.1) 0%, rgba(44, 62, 80, 0));
-    width:100%;
-    height:100%;
-    position:absolute;
-    bottom:0;
-    right:0;
+.gradient {
+    /*ici le gardient blanc*/
+    background: linear-gradient(0deg, rgba(251, 249, 241, 1) 0%, rgba(205, 220, 57, 0) 40%, rgba(238, 130, 238, 0) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-.dark{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+.dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.painterDescr, .titleSection{
+.painterDescr,
+.titleSection {
     position: relative;
     z-index: 1000;
 }
 
-.titleSection{
-    font-family:"Tan-Pearl", sans-serif;
-    font-size:2rem;
-    margin:100px 0px 50px 0px;
-    color:white;
+.titleSection {
+    font-family: "Tan-Pearl", sans-serif;
+    font-size: 2rem;
+    margin: 100px 0px 50px 0px;
+    color: white;
 }
 
-.painterDescr{
-    font-size:1rem;
-    color:white;
+.painterDescr {
+    font-size: 1rem;
+    color: white;
 }
 
 /*Je mets en place la seuxième section de la page d'accueil*/
-.section2{
-    width:100%;
-    min-height: 100vh;
-    background-color:rgba(251, 249, 241, 1);
+.section2 {
+    width: 100%;
+    background-color: rgba(251, 249, 241, 1);
 
 }
 
+.titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 20px 50px 20px;
+}
 
-@media(min-width:750px){
-    .title{
-        font-size:5rem;
+.line {
+    width: 100%;
+    border-bottom: 2px solid #614838;
+}
+
+.titleSection2 {
+    font-family: "Tan-Pearl", sans-serif;
+    font-size: 2rem;
+    margin: 100px 0px 50px 0px;
+    color: #614838;
+    margin: 0;
+}
+
+/*Je mets en place la gallerie de la page d'accueil*/
+
+.allCards {
+    padding-bottom: 40px;
+}
+
+.horizontalCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 0px 20px 50px 20px;
+
+}
+
+.verticalCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card1,
+.card2 {
+    width: 300px;
+    height: 180px;
+}
+
+.card3 {
+    width: 300px;
+    height: 400px;
+}
+
+
+.card1,
+.card2,
+.card3 {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: inline-block;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.card1 {
+    background-image: url(./images/card1.jpg);
+}
+
+.card2 {
+    background-image: url(./images/card2.jpg);
+}
+
+.card3 {
+    background-image: url(./images/card3.jpg);
+}
+
+.titleCard {
+    font-family: "Cinzel", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleCard.one,
+.titleCard.two {
+    height: 100%;
+    width: 70px;
+    transform: rotate(-180deg);
+    writing-mode: vertical-rl;
+    right: 0;
+
+}
+
+.titleCard.three {
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+}
+
+.linkGallerie{
+    font-family:"Cinzel", sans-serif;
+    padding:15px;
+    color: #614838;
+    border:solid 1px #614838;
+    text-decoration: none;
+    display: block;
+    width:fit-content;
+}
+
+.linkGallerie.one{
+    margin:auto;
+    margin-top:40px;
+}
+
+
+
+.linkGallerie.two{
+    display:none;
+}
+
+@media(min-width:500px) {
+    .gradient {
+        /*ici le gardient blanc*/
+        background: linear-gradient(0deg, rgba(251, 249, 241, 1) 0%, rgba(205, 220, 57, 0) 60%, rgba(238, 130, 238, 0) 100%);
+    }
+}
+
+
+@media(min-width:750px) {
+    .title {
+        font-size: 5rem;
     }
 
-    .headerText{
+    .headerText {
         padding: 25px 55px 0px 55px;
     }
 
-    .slide, .slider-total{
-        height:55vh;
+    .slide,
+    .slider-total {
+        height: 55vh;
     }
 
-    .slider-visible{
-        position:absolute;
-        bottom:0;
-        width:100%;
+    .slider-visible {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
-    .arrow{
-        width:100px;
-        height:100px;
-        border:solid white 2px;
+    .arrow {
+        width: 100px;
+        height: 100px;
+        border: solid white 2px;
     }
 
-    .arrow.left{
-        left:55px;
-    }
-    
-    .arrow.right{
-        right:55px;
+    .arrow.left {
+        left: 55px;
     }
 
-    .descrExpo{
+    .arrow.right {
+        right: 55px;
+    }
+
+    .descrExpo {
         font-size: 1.6rem;
     }
 
-    .section1{
-        padding:50px 55px 250px 55px;
+    .section1 {
+        padding: 50px 55px 50px 55px;
     }
 
-    .titleSection{
-        font-size:3rem;
+    .titleSection,
+    .titleSection2 {
+        font-size: 3rem;
     }
 
-    .painterDescr{
-        font-size:1.2rem;
+    .painterDescr {
+        font-size: 1.2rem;
+
+    }
+
+    .allCards{
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap:40px;
+    }
+
+    .horizontalCards{
+        padding:0;
+    }
+
+
+    .section2{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .verticalCard{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap:40px;
+
+    }
+
+    .linkGallerie.one{
+        display:none;
+    }
+
+    .linkGallerie.two{
+        display:block;
+    }
+
+
     
-    }
 
-    
+
 }
 
-@media(min-width:1100px){
-    .title{
-        font-size:7rem;
+@media(min-width:1100px) {
+    .title {
+        font-size: 7rem;
     }
 
 
-    .slide, .slider-total{
-        height:65vh;
+    .slide,
+    .slider-total {
+        height: 65vh;
     }
 
-    .headerText{
+    .headerText {
         padding: 25px 100px 0px 100px;
     }
 
-    .arrow.left{
-        left:100px;
-    }
-    
-    .arrow.right{
-        right:100px;
+    .arrow.left {
+        left: 100px;
     }
 
-    .section1{
-        padding:50px 100px 250px 100px;
+    .arrow.right {
+        right: 100px;
     }
 
-    
+    .section1 {
+        padding: 50px 100px 250px 100px;
+    }
+
+    .gradient {
+        /*ici le gardient blanc*/
+        background: linear-gradient(0deg, rgba(251, 249, 241, 1) 0%, rgba(205, 220, 57, 0) 70%, rgba(238, 130, 238, 0) 100%);
+    }
+
+    /*Je modifie la taille de mes cards*/
+
+    .card1,
+    .card2 {
+        width: 400px;
+        height: 280px;
+    }
+
+    .card3 {
+        width: 400px;
+        height: 630px;
+    }
+
+    .titleCard.one,
+    .titleCard.two {
+        width: 80px;
+    }
+
+    .titleCard.three {
+        height: 80px;
+    }
+
+    .horizontalCards{
+        gap: 70px;
+    }
+
+    .allCards{
+        gap:70px;
+    }
+
+    .titleCard{
+        font-size:1.2rem;
+    }
+
+    .verticalCard{
+        gap:70px;
+    }
+
+
+
+}
+
+@media(min-width:1250px){
+    /*Je modifie la taille de mes cards*/
+
+    .card1,
+    .card2 {
+        width: 500px;
+        height: 340px;
+    }
+
+    .card3 {
+        width: 500px;
+        height: 760px;
+    }
+
+    .horizontalCards{
+        gap: 80px;
+    }
+
+    .allCards{
+        gap:80px;
+    }
 }
