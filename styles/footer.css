@@ -1,0 +1,95 @@
+footer{
+    color:white;
+    background-color: var(--bleu);
+    padding:60px 40px 60px 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+
+.logoContainer{
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+
+.logoFooter{
+    width:120px;
+}
+
+.titleExpo{
+    font-family:"Parisienne", sans-serif;
+    font-size:1.2rem;
+    margin:0px 0px 10px 0px;
+    
+}
+
+.agence{
+    font-size:0.8rem;
+    margin:0;
+}
+
+.pagesAndReseaux{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+
+}
+
+.pages{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.bold{
+    font-family: "PromptBold", sans-serif;
+    margin-top:0;
+}
+
+.footerLink{
+    color:white;
+    text-decoration:none;
+    padding:0;
+}
+
+.linksReseau{
+    display:flex;
+    gap:20px;
+}
+
+.linkReseau{
+    padding:0;
+}
+
+.reseaux{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reseau{
+    width:40px;
+    
+}
+
+@media(min-width:500px){
+    .pagesAndReseaux{
+        flex-direction: row;
+        gap:100px;
+        align-items: flex-start;
+    
+    }
+
+    footer{
+        gap:50px;
+    }
+}
+
+@media(min-width:950px){
+
+    footer{
+        flex-direction: row;
+    }
+}
