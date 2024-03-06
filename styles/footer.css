@@ -5,7 +5,7 @@ footer{
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap:30px;
+    gap:60px;
 }
 
 .logoContainer{
@@ -75,21 +75,29 @@ footer{
 }
 
 @media(min-width:500px){
-    .pagesAndReseaux{
-        flex-direction: row;
-        gap:100px;
-        align-items: flex-start;
-    
-    }
 
     footer{
-        gap:50px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /* gap:50px; */
+    }
+
+    .logoContainer{
+        margin:0;
     }
 }
-
-@media(min-width:950px){
+@media(min-width:500px){
 
     footer{
+        flex-wrap: wrap;
         flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
     }
+
+    .bold.contact{
+        margin-bottom:30px;
+    }
+
 }
