@@ -139,6 +139,10 @@ header {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+.dark.two{
+    backdrop-filter: blur(1.5px);
+}
+
 .painterDescr,
 .titleSection {
     position: relative;
@@ -275,11 +279,12 @@ header {
 .linkGallerie{
     font-family:"Cinzel", sans-serif;
     padding:15px;
-    color: #614838;
-    border:solid 1px #614838;
+    color: var(--marron);
+    border:solid 1px  var(--marron);
     text-decoration: none;
     display: block;
     width:fit-content;
+    transition: transform 0.3s ease-in-out;
 }
 
 .linkGallerie.one{
@@ -292,6 +297,92 @@ header {
 .linkGallerie.two{
     display:none;
 }
+
+/*Je mets en place la section de l'immersion*/
+
+.section3{
+    background-image: url(./images/fondFleur.jpg);
+    background-size: cover;
+    background-position: center;
+    color:var(--beige);
+    padding:40px 40px 60px 40px;
+    position: relative;
+}
+
+.flexContainer{
+    position: relative;
+    z-index:200;
+}
+
+.immersion{
+    max-width:700px;
+}
+
+.immersionTitle{
+    font-family:"tan-pearl", sans-serif;
+    font-size:2rem;
+}
+
+
+.reserve{
+    font-family:"Cinzel", sans-serif;
+    padding:15px;
+    color: var(--beige);
+    border:solid 1px  var(--beige);
+    text-decoration: none;
+    display: block;
+    width:fit-content;
+    margin-left:auto;
+    margin-top:40px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.reserve:hover, .linkGallerie:hover{
+    transform: scale(1.1);
+}
+
+.imagesTabContainer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagesTab{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+
+.imageTab{
+    position:relative;
+}
+
+
+.imageTab.one{
+    width:130px;
+    height:auto;
+    transform: rotate(15deg);
+    bottom:-50px;
+    right:-30px;
+}
+
+.imageTab.two{
+    width:200px;
+    height:auto;
+    transform: rotate(-10deg);
+    
+}
+
+
+
+
+
+/*----------------------------PLACE AUX MEDIA QUERIES--------------------------*/
+
 
 @media(min-width:500px) {
     .gradient {
@@ -388,9 +479,26 @@ header {
     }
 
 
+    .section3{
+        padding:55px;
+
+    }
+
+    .immersionTitle{
+        font-size:2.5rem;
     
+    }
 
+}
 
+@media(min-width:900px){
+    .flexContainer{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:50px;
+    
+    }
 }
 
 @media(min-width:1100px) {
@@ -461,6 +569,19 @@ header {
 
     .verticalCard{
         gap:70px;
+    }
+
+    .section3{
+        padding:75px 100px 55px 100px;
+    
+    }
+
+    .imageTab.one{
+        width:170px;
+    }
+
+    .imageTab.two{
+        width:240px;
     }
 
 

@@ -36,6 +36,16 @@
     src: url(./fonts/Louis\ George\ Cafe\ Bold.woff2) format(woff2);
 }
 
+
+/*Je définis les variables de couleur qui vont être utilisées dans le site*/
+
+:root {
+    --beige: #FBF9F1;
+    --bleu: #2F6C68;
+    --marron: #614838;
+    --gris: #434343;
+}
+
 body {
     margin: 0;
     font-family: "promptRegular", sans-serif;
@@ -44,11 +54,8 @@ body {
 }
 
 header {
-    height: 100vh;
     min-height: 100vh;
     position: relative;
-    /* display:flex;
-    flex-direction: column;  */
 }
 
 header {
