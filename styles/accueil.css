@@ -130,7 +130,7 @@ header {
     right: 0;
 }
 
-.dark { /*ici une coiche de noir transparent pour rendre le texte plus visible*/
+.dark { /*ici une couche de noir transparent pour rendre le texte plus visible*/
     position: absolute;
     top: 0;
     left: 0;
