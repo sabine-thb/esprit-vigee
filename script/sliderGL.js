@@ -19,3 +19,12 @@ var sliderSlider = new Swiper('.slider-slider', {
       prevEl: '.swiper-button-prev',
     }
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var swiperSlides = document.querySelectorAll('#slide');
+    
+    swiperSlides.forEach(function(slide, index) {
+        var ariaLabel = (index + 1) + "/" + swiperSlides.length;
+        slide.setAttribute('aria-label', ariaLabel);
+    });
+});
