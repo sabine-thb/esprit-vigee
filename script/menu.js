@@ -37,12 +37,14 @@ buttons.forEach(function(button) {
                 body.style.overflowY = 'hidden';
                 scrollNav.style.backgroundColor = 'transparent';
                 scrollNav.style.boxShadow = 'inset 0px 0px 0px 0px rgba(0,0,0,0)';
+                scrollNav.style.backdropFilter = 'none';
 
             } else {
                 line.style.background = 'white';
                 body.style.overflowY = 'visible';
                 scrollNav.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';  
                 scrollNav.style.boxShadow = '0px 10px 5px 0px rgba(0,0,0,0.08)';
+                scrollNav.style.backdropFilter = 'blur(10px)';
                 
             }
         });

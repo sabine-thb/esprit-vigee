@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         retourDebut();
       } else { 
         photosWrapper.style.left = mouvement * -100  + "%";
-        photosWrapper.style.transition = 'left 0.6s ease-out '; 
+        photosWrapper.style.transition = 'left 0.6s ease-in-out '; 
         
       }
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         retourFin();
       } else { // sinon je peux déplacer le slider normalement
         photosWrapper.style.left = mouvement * -100  + "%";
-        photosWrapper.style.transition = 'left 0.6s ease-out ';      
+        photosWrapper.style.transition = 'left 0.6s ease-in-out ';      
         
       }
       console.log('decaleDroite');
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       setTimeout( function () {
         mouvement = minMouvement + 1; 
-        photosWrapper.style.transition = 'left 0.6s ease-out'; 
+        photosWrapper.style.transition = 'left 0.6s ease-in-out'; 
         photosWrapper.style.left = mouvement * -100  + "%"; 
       }, 20)
 
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
       setTimeout( function () {
         mouvement = maxMouvement - 1;
-        photosWrapper.style.transition = 'left 0.6s ease-out';
+        photosWrapper.style.transition = 'left 0.6s ease-in-out';
         photosWrapper.style.left = mouvement * -100  + "%";
       }, 20)
 
@@ -84,4 +84,41 @@ document.addEventListener("DOMContentLoaded", function() {
     btnDecaleDroite.addEventListener('click', function() {
       decaleDroite();
     });
-  })
+
+
+
+
+
+
+    function ajusterProprietesHeader() {
+      var monHeader = document.querySelector('header');
+      var title = document.querySelector('.title');
+      var arrowRight = document.querySelector('.arrow.right');
+      var arrowLeft = document.querySelector('.arrow.left');
+  
+      // Vérifier si la hauteur de l'en-tête est inférieure à 725px
+      if (monHeader.clientHeight < 725) {
+          title.style.fontSize = '5rem';
+          arrowRight.style.bottom = '20px';
+          arrowLeft.style.bottom = '20px';
+      } 
+      else {
+        title.style.fontSize = ''; // Réinitialisation de la taille de la police
+        arrowRight.style.bottom = ''; // Réinitialisation de la position
+        arrowLeft.style.bottom = ''; // Réinitialisation de la position
+      }
+  
+      console.log(monHeader.clientHeight);
+  }
+  
+  // Appeler la fonction une première fois pour initialiser les propriétés
+  ajusterProprietesHeader();
+  
+  // Ajouter un écouteur d'événements pour le redimensionnement de la fenêtre
+  window.addEventListener('resize', ajusterProprietesHeader);
+
+
+
+});
+
+

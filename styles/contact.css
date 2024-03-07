@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(./images/backgallerie.jpg);
+    background-image: url(./images/fondContact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100vh;
     min-height: 100vh;
     position: relative;
@@ -46,10 +46,44 @@ header {
     bottom: 100px;
 }
 
-section {
-    width: 100%;
-    height: 100vh;
+.imagesTab{
+    /* display:none; */
+    justify-content: center;
+    align-items: center;
+    right:0;
+    bottom:0;
+    position: absolute;
+    height:100%;
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.imgTab{
+    position: relative;
+}
+
+.imgTab.one{
+    width:150px;
+    transform: rotate(20deg);
+}
+
+.imgTab.two{
+    width:100px;
+    transform: rotate(-26deg);
+    right:45px;
+    top:-80px;
+}
+
+@media(min-width:520px) {
+    /* .imagesTab{
+        display: block;
+    } */
+}
+
+
 
 
 
@@ -58,6 +92,7 @@ section {
     .title {
         font-size: 5rem;
     }
+
 }
 
 @media(min-width:1100px) {
@@ -80,6 +115,14 @@ section {
         font-size: 1.3rem;
     }
 
+    .imgTab.one{
+        width:190px;
+    }
+    
+    .imgTab.two{
+        width:150px;
+    }
+
 
 }
 
@@ -88,6 +131,20 @@ section {
         font-size: 7rem;
     }
 
+    .imgTab.one{
+        width:220px;
+    }
+    
+    .imgTab.two{
+        width:180px;
+    }
 
+    
+    
 
 }
+
+
+
+
+

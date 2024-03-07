@@ -400,12 +400,12 @@ header {
     }
 
     .headerText {
-        padding: 25px 55px 0px 55px;
+        padding: 0px 55px 0px 55px;
     }
 
     .slide,
     .slider-total {
-        height: 55vh;
+        height: 50vh;
     }
 
     .slider-visible {
@@ -429,7 +429,7 @@ header {
     }
 
     .descrExpo {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
     .section1 {
@@ -515,7 +515,7 @@ header {
     }
 
     .headerText {
-        padding: 25px 100px 0px 100px;
+        padding: 0px 100px 0px 100px;
     }
 
     .arrow.left {
