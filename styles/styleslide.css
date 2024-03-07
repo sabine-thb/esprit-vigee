@@ -167,6 +167,8 @@ html {
   padding:20px;
   border:solid 2px white;
   border-radius:50%;
+  transition: width 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
 }
 
 .arrow.right{
@@ -180,7 +182,11 @@ right: 0px !important;
 right: 0px !important;
 left:0px;
 }
+.arrow:hover{
+  
+    padding: 25px;
 
+}
 .control{
   display:flex;
   justify-content: center;
