@@ -12,30 +12,67 @@ $(document).ready(function () {
     }); 
   });
 
-// Faire en sorte de chnager la couleur de la croix quand le menu birger est ouvert
+// Faire en sorte de chnager la couleur de la croix quand le menu burger est ouvert
 
-var mobileNavButton = document.querySelector('.mobile-nav-button');
-var mobileNavMenu = document.querySelector('.mobile-menu');
+// Sélection de tous les éléments avec la classe .mobile-nav-button, et gerer en fonction de quel menu burger est ouvert
 
-// Compteur pour suivre le nombre de clics
+var body= document.querySelector('body');
+var buttons = document.querySelectorAll('.mobile-nav-button');
+var scrollNav = document.querySelector('.scrollNav');
+
+// Initialisation du compteur pour suivre le nombre de clics
 var clickCount = 0;
 
-mobileNavButton.addEventListener('click', function() {
-    // Sélection de tous les éléments enfants de mobileNavButton
-    var children = mobileNavButton.querySelectorAll('*');
+// Ajout d'un écouteur d'événements de clic à chaque bouton
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Sélection de tous les éléments avec la classe .line
+        var lines = document.querySelectorAll('.mobile-nav-button__line');
 
-    // Parcours de tous les éléments enfants et changement de leur couleur
-    children.forEach(function(child) {
-        // Si le compteur est pair, changer la couleur en noir, sinon en blanc
-        if (clickCount % 2 === 0) {
-            child.style.background = 'black';
-        } else {
-            child.style.background = 'white';
-        }
+
+        lines.forEach(function(line) {
+            
+            if (clickCount % 2 === 0) {
+                line.style.background = 'black';
+                body.style.overflowY = 'hidden';
+                scrollNav.style.backgroundColor = 'transparent';
+                scrollNav.style.boxShadow = 'inset 0px 0px 0px 0px rgba(0,0,0,0)';
+
+            } else {
+                line.style.background = 'white';
+                body.style.overflowY = 'visible';
+                scrollNav.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';  
+                scrollNav.style.boxShadow = '0px 10px 5px 0px rgba(0,0,0,0.08)';
+                
+            }
+        });
+        
+
+        
+
+        // Incrémentation du compteur pour le prochain clic
+        clickCount++;
+        console.log(clickCount);
     });
+});
 
-    // Incrémentation du compteur pour le prochain clic
-    clickCount++;
+
+
+
+//Je mets en place le menu qui apprait au scroll
+
+window.addEventListener('scroll', function() {
+    var element = document.querySelector('.scrollNav'); // Remplacez 'votre_element' par l'ID de votre élément
+    var position = window.scrollY; // Position de défilement verticale
+
+    if (position > 200) { // Si la position de défilement dépasse 200 pixels
+        element.style.top = '0px'; // pour l'animation
+        element.style.position = 'fixed';
+
+    } else {
+        element.style.top = '-120px'; // Cacher l'élément
+        element.style.position = 'absolute';
+    }
 });
 
 
