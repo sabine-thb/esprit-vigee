@@ -10,7 +10,7 @@
     scroll-behavior: smooth;
   }
   
-  @media (min-width: 1440px) {
+  /* @media (min-width: 1440px) {
     html {
       zoom: 1.5;
     }
@@ -26,9 +26,9 @@
     html {
       zoom: 2.5;
     }
-  }
+  } */
   
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     width: 1.3rem;
   }
   
@@ -44,6 +44,14 @@
   
   ::-webkit-scrollbar-track {
     background: #f9f9f9;
+  } */
+
+  /* .swiper-wrapper {
+    gap: 0px !important;;
+  } */
+
+  .swiper-slide{
+    width:fit-content!important;;
   }
   
   
