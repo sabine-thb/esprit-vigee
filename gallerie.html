@@ -15,6 +15,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
 </head>
 <body class="halo-container">
 
@@ -63,11 +67,71 @@
         <p class="descrGallerie">Liste des peintures présentées durant l’exposition interactive</p>
      </div>
     </header>
-    <section class="slider">
+    <section id="slider">
+  
+      <div class="container">
+        <div class="swiper slider-slider">
+          <div class="swiper-wrapper">
+          
+            <div class="swiper-slide slider-slide">
+              <div class="slider-slide-img">
+                <img src="./styles/images/tableau1.png" alt="slider">
+              </div>
+              
+            </div>
+          
+            <div class="swiper-slide slider-slide">
+              <div class="slider-slide-img">
+                <img src="./styles/images/tableau2.png" alt="slider">
+              </div>
+             
+            </div>
+         
+            <div class="swiper-slide slider-slide">
+              <div class="slider-slide-img">
+                <img src="./styles/images/tableau3.png" alt="slider">
+              </div>
+            
+            </div>
+          
+            <div class="swiper-slide slider-slide">
+                <div class="slider-slide-img">
+                  <img src="./styles/images/tableau4.png" alt="slider">
+                </div>
+              
+            </div>
+         
+            <div class="swiper-slide slider-slide">
+              <div class="slider-slide-img">
+                <img src="./styles/images/tableau5.png" alt="slider">
+              </div>
+             
+            </div>
+          
+            <div class="swiper-slide slider-slide">
+              <div class="slider-slide-img">
+                <img src="./styles/images/tableau6.png" alt="slider">
+              </div>
+              
+            </div>
+           
+          </div>
 
+          <div class="slider-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-
+ 
 
 
     <footer>
@@ -108,9 +172,14 @@
 
 
     
-
+<!-- petits points -->
      <script src="./script/halo.js"></script>
      <script src="./script/menu.js"></script>
+     <!-- slider -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+     <script src="./script/sliderGL.js"></script>
     
 </body>
 </html>
