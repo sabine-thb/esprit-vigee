@@ -23,9 +23,9 @@ header {
 .descrExpo {
     font-size: 1rem;
     width: fit-content;
-    color: white;
+    color: var(--beige);
     padding: 20px 0px 20px 0px;
-    border-bottom: white 1px solid;
+    border-bottom: var(--beige) 1px solid;
     margin: 0;
 }
 
@@ -34,7 +34,7 @@ header {
     font-weight: 300;
     font-size: 3rem;
     text-transform: uppercase;
-    color: white;
+    color: var(--beige);
     letter-spacing: 5px;
     margin-bottom: 0;
     margin-top: 25px;
@@ -153,12 +153,12 @@ header {
     font-family: "Tan-Pearl", sans-serif;
     font-size: 2rem;
     margin: 100px 0px 50px 0px;
-    color: white;
+    color: var(--beige);
 }
 
 .painterDescr {
     font-size: 1rem;
-    color: white;
+    color: var(--beige);
 }
 
 /*Je mets en place la seuxième section de la page d'accueil*/
