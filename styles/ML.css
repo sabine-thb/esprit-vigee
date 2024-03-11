@@ -23,7 +23,7 @@ header {
     font-weight: 300;
     font-size: 2.5rem;
     text-transform: uppercase;
-    color: var(--beige);
+    color: var(--blanc);
     margin-bottom: 0;
     padding: 0px 20px 0px 20px;
     position: absolute;
@@ -32,7 +32,7 @@ header {
 
 section{
     padding:0px 20px 100px 20px;
-    color:var(--beige);
+    color:var(--blanc);
 }
 
 .titlePar{

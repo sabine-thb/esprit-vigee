@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+header {
+    background-image: url(./images/fondFleur.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 50vh;
+    min-height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.title {
+    font-family: "Tan-Pearl", sans-serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: var(--blanc);
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    margin-top: 25px;
+    position: absolute;
+    top: -54px;
+    z-index:200;
+}
+
+.billeterie{
+    background-color: var(--beige);
+    position:relative;
+    padding:50px 20px 50px 20px;
+    height:fit-content;
+}
+
+.degrade{
+    background: linear-gradient(0deg,  rgba(219,215,197,1) 20%, rgba(117,115,105,1) 94%);
+    width:100%;
+    height:80px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.navBilleterie{
+    display:flex;
+    flex-wrap: wrap;
+    gap:25px;
+    padding:20px 0px 50px 0px;
+    position:relative;
+    z-index:1000;
+}
+
+.navLinkBilleterie{
+    border:2px solid var(--marron);
+    padding:15px;
+    color:var(--marron);
+    text-decoration:none;
+}
+
+/*Je stylise les composants en fonction des étapes*/
+
+form{
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* p{
+    width:fit-content;
+} */
+
+#date{
+    width:100%;
+    height:40px;
+    padding:15px;
+    margin-bottom:40px;
+}
+
+.horaires{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+input[type=radio]+label {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #434343;
+    color:var(--blanc);
+    border-color: #ddd;
+    width: fit-content;
+}
+
+input[type=radio]{
+    visibility: hidden;
+    cursor:pointer;
+    width:0;
+    position: absolute;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #8c8c8c;
+    color: #fff; /* Optionnel: changer la couleur du texte */
+  }
+
+.submit{
+    font-family: "PromptRegular", sans-serif;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    display: inline-block;
+    padding: 8px 30px;
+    background-color: #0d0d0d;
+    color:var(--blanc);
+    border:none;
+    cursor: pointer !important;
+}
+
+
+@media(min-width:750px){
+    .title {
+        font-size: 5rem;
+        top:-80px;
+    }
+
+    .billeterie{
+        padding:50px 20px 50px 20px;
+    }
+}
+
+
+@media(min-width:1100px){
+    .title {
+        font-size: 7rem;
+        top:-100px;
+
+    }
+
+    .billeterie{
+        padding:100px 20px 50px 100px;
+    }
+}

@@ -23,9 +23,9 @@ header {
 .descrExpo {
     font-size: 1rem;
     width: fit-content;
-    color: var(--beige);
+    color: var(--blanc);
     padding: 20px 0px 20px 0px;
-    border-bottom: var(--beige) 1px solid;
+    border-bottom: var(--blanc) 1px solid;
     margin: 0;
 }
 
@@ -34,7 +34,7 @@ header {
     font-weight: 300;
     font-size: 3rem;
     text-transform: uppercase;
-    color: var(--beige);
+    color:var(--blanc);
     letter-spacing: 5px;
     margin-bottom: 0;
     margin-top: 25px;
@@ -153,18 +153,21 @@ header {
     font-family: "Tan-Pearl", sans-serif;
     font-size: 2rem;
     margin: 100px 0px 50px 0px;
-    color: var(--beige);
+    color: var(--blanc);
 }
 
 .painterDescr {
     font-size: 1rem;
-    color: var(--beige);
+    color: var(--blanc);
 }
 
 /*Je mets en place la seuxième section de la page d'accueil*/
 .section2 {
     width: 100%;
-    background-color: rgba(251, 249, 241, 1);
+    /* background-color: rgba(251, 249, 241, 1); */
+    position: relative;
+    background: linear-gradient(0deg, rgba(117,115,105,1) 0%, rgba(251, 249, 241, 1)20%);
+    
 
 }
 
@@ -279,12 +282,14 @@ header {
 .linkGallerie{
     font-family:"Cinzel", sans-serif;
     padding:15px;
-    color: var(--marron);
-    border:solid 1px  var(--marron);
+    color: var(--blanc);
+    border:solid 1px  var(--blanc);
     text-decoration: none;
     display: block;
     width:fit-content;
     transition: transform 0.3s ease-in-out;
+    position:relative;
+    z-index:200;
 }
 
 .linkGallerie.one{
@@ -298,13 +303,15 @@ header {
     display:none;
 }
 
+
+
 /*Je mets en place la section de l'immersion*/
 
 .section3{
     background-image: url(./images/fondFleur.jpg);
     background-size: cover;
     background-position: center;
-    color:var(--beige);
+    color:var(--blanc);
     padding:40px 40px 60px 40px;
     position: relative;
 }
@@ -327,8 +334,8 @@ header {
 .reserve{
     font-family:"Cinzel", sans-serif;
     padding:15px;
-    color: var(--beige);
-    border:solid 1px  var(--beige);
+    color: var(--blanc);
+    border:solid 1px  var(--blanc);
     text-decoration: none;
     display: block;
     width:fit-content;
@@ -391,6 +398,8 @@ header {
         /*ici le gardient blanc*/
         background: linear-gradient(0deg, rgba(251, 249, 241, 1) 0%, rgba(205, 220, 57, 0) 60%, rgba(238, 130, 238, 0) 100%);
     }
+
+   
 }
 
 
