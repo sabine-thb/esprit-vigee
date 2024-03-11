@@ -32,16 +32,16 @@ header {
     font-weight: 300;
     font-size: 3rem;
     text-transform: uppercase;
-    color: var(--beige);
+    color: var(--blanc);
     margin-bottom: 0;
 }
 
 .descrGallerie {
     font-size: 1rem;
     width: fit-content;
-    color: var(--beige);
+    color: var(--blanc);
     padding: 20px 0px 20px 0px;
-    border-top: var(--beige) 1px solid;
+    border-top: var(--blanc) 1px solid;
     margin: 0;
 }
 
@@ -102,7 +102,7 @@ section{
 }
 
 .textContact{
-    color: var(--beige);
+    color: var(--blanc);
 }
 
 .mail{
@@ -110,7 +110,7 @@ section{
 }
 
 .textCreateurs{
-    color:var(--beige);
+    color:var(--blanc);
     max-width:600px;
 }
 
@@ -142,7 +142,7 @@ section{
 .name{
     font-size:1.2rem;
     font-family: "Cinzel", sans-serif;
-    color:var(--beige);
+    color:var(--blanc);
     margin:0px;
 }
 
@@ -153,7 +153,7 @@ section{
 
 .line{
     width:200px;
-    border-bottom: solid 1px var(--beige);
+    border-bottom: solid 1px var(--blanc);
     padding:10px;
 }
 

@@ -162,7 +162,7 @@ p {
 
 .navLink {
     font-family: "PromptBold", sans-serif;
-    color: var(--beige);
+    color: var(--blanc);
     text-decoration: none;
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -212,14 +212,6 @@ p {
         justify-content: space-between;
         align-items: center;
         padding: 30px 55px 0px 55px;
-    }
-
-
-}
-
-@media(min-width:1200px) {
-
-    .nav2 {
         padding: 30px 100px 0px 100px;
     }
 

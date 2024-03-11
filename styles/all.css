@@ -45,10 +45,11 @@
 /*Je définis les variables de couleur qui vont être utilisées dans le site*/
 
 :root {
-    --beige: #FBF9F1;
+    --blanc: #FBF9F1; 
     --bleu: #2F6C68;
     --marron: #614838;
     --gris: #434343;
+    --beige: #DBD7C5;
 }
 
 body {

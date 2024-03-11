@@ -1,5 +1,6 @@
+
 footer{
-    color:var(--beige);
+    color:var(--blanc);
     background-color: var(--bleu);
     padding:60px 40px 60px 40px;
     display:flex;
@@ -49,7 +50,7 @@ footer{
 }
 
 .footerLink{
-    color:var(--beige);
+    color:var(--blanc);
     text-decoration:none;
     padding:0;
 }
