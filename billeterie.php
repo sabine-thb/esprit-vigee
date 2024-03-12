@@ -69,7 +69,7 @@
             <a href="billeterie.php?action=nombreBillets" class="navLinkBilleterie">Nombre de billets</a>
             <a href="billeterie.php?action=coordonnées" class="navLinkBilleterie">Coordonnées</a>
         </div>
-        <div>
+        <div class="resa">
             <?php if($_GET['action'] == 'dateVisite'): ?>
                 <form action="billeterie.php?action=nombreBillets">
                     <p>
@@ -105,6 +105,13 @@
                     </p>
 
                 </form>
+                <div class="recap">
+                    <img src="./styles/images/afficheExpo.png" class="affiche" alt="">
+                    <div class= recapTxt>
+                        <p class="titleBillet">Exposition Esprit Vigée</p>
+                        <p>Mode d'obtention : e-ticket, gratuit</p>
+                    </div>
+                </div>
                 
                 
                 
@@ -119,7 +126,7 @@
                 <!-- Code HTML pour l'action 'coordonnées' -->
             <?php endif; ?>
             
-            <div class="recap"></div>
+            
         </div>
 
         <script>

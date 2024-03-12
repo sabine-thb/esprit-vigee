@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         retourDebut();
       } else { 
         photosWrapper.style.left = mouvement * -100  + "%";
-        photosWrapper.style.transition = 'left 0.6s ease-in-out '; 
+        photosWrapper.style.transition = 'left 0.6s ease-out '; 
         
       }
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         retourFin();
       } else { // sinon je peux déplacer le slider normalement
         photosWrapper.style.left = mouvement * -100  + "%";
-        photosWrapper.style.transition = 'left 0.6s ease-in-out ';      
+        photosWrapper.style.transition = 'left 0.6s ease-out ';      
         
       }
       console.log('decaleDroite');
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       setTimeout( function () {
         mouvement = minMouvement + 1; 
-        photosWrapper.style.transition = 'left 0.6s ease-in-out'; 
+        photosWrapper.style.transition = 'left 0.6s ease-out'; 
         photosWrapper.style.left = mouvement * -100  + "%"; 
       }, 20)
 
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
       setTimeout( function () {
         mouvement = maxMouvement - 1;
-        photosWrapper.style.transition = 'left 0.6s ease-in-out';
+        photosWrapper.style.transition = 'left 0.6s ease-out';
         photosWrapper.style.left = mouvement * -100  + "%";
       }, 20)
 
