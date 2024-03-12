@@ -190,3 +190,17 @@ p{
         padding:100px 100px 30px 100px;
     }
 }
+
+@media(min-width:1250px){
+    .titleBillet {
+        font-size: 1.3rem;
+        top:-100px;
+
+    }
+
+    .recap{
+        gap:20px;
+        justify-content: flex-start;
+    }
+
+}

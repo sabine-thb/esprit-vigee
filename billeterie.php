@@ -67,14 +67,19 @@
         <div class="navBilleterie">
             <a href="billeterie.php?action=dateVisite" class="navLinkBilleterie">Date de visite</a>
             <a href="billeterie.php?action=nombreBillets" class="navLinkBilleterie">Nombre de billets</a>
-            <a href="billeterie.php?action=coordonnées" class="navLinkBilleterie">Coordonnées</a>
+            <a href="billeterie.php?action=coordonnees" class="navLinkBilleterie">Coordonnées</a>
         </div>
         <div class="resa">
-            <?php if($_GET['action'] == 'dateVisite'): ?>
-                <form action="billeterie.php?action=nombreBillets">
+
+        <?php 
+        if (isset($_GET['absence'])) {
+            echo "<p class=\"txtRouge\">Votre absence a bien été insérée.</p>";
+        }?>
+            <?php  if (isset($_GET['action']) && $_GET['action'] == 'dateVisite') : ?>
+                <form action="billeterie.php?action=nombreBillets" method="POST">
                     <p>
                         <label for="date">Choisissez une date :</label>
-                        <input type="date" id="date">
+                        <input type="date" id="date" name="date">
                     </p>
                     <p>
                         <label for="date">Choisissez un horaire :</label><br>
@@ -113,16 +118,36 @@
                     </div>
                 </div>
                 
-                
-                
 
             <?php endif; ?>
 
-            <?php if($_GET['action'] == 'nombreBillets'): ?>
-                <!-- Code HTML pour l'action 'nombreBillets' -->
+            <?php  if (isset($_GET['action']) && $_GET['action'] == 'nombreBillets') : 
+                $date=$_POST["date"];
+                $horaire=$_POST["horaire"];      
+
+            ?>
+                <form action="billeterie.php?action=coordonnées" method="POST">
+                    <p>
+                        <label for="number">Nombre de billets uniques pour l'exposition :</label>
+                        <input type="date" id="date" name="number">
+                    </p>
+                    
+                    <p>
+                        <input type="submit" value="valider" class="submit">
+                    </p>
+
+                </form>
+                <div class="recap">
+                    <img src="./styles/images/afficheExpo.png" class="affiche" alt="">
+                    <div class= recapTxt>
+                        <p class="titleBillet">Exposition Esprit Vigée</p>
+                        <p>Mode d'obtention : e-ticket, gratuit</p>
+                        <p>Date : le <?php echo $date ?> à <?php echo $horaire ?></p>
+                    </div>
+                </div>
             <?php endif; ?>
 
-            <?php if($_GET['action'] == 'coordonnées'): ?>
+            <?php  if (isset($_GET['action']) && $_GET['action'] == 'coordonnees') : ?>
                 <!-- Code HTML pour l'action 'coordonnées' -->
             <?php endif; ?>
             
