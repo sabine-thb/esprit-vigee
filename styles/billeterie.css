@@ -67,15 +67,9 @@ header {
 /*Je stylise les composants en fonction des étapes*/
 
 form{
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width:auto;
 }
 
-/* p{
-    width:fit-content;
-} */
 
 #date{
     width:100%;
@@ -128,6 +122,37 @@ input[type="radio"]:checked + label {
 }
 
 
+.recap{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blanc);
+    padding:25px;
+}
+p{
+    text-align: center;
+}
+.affiche{
+    width:200px;
+}
+
+.titleBillet{
+    font-family:"PromptBold", sans-serif
+}
+
+@media(min-width:450px){
+    .recap{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap:20px;
+    }
+
+    p{
+        text-align: left;
+    }
+}
+
 @media(min-width:750px){
     .title {
         font-size: 5rem;
@@ -136,6 +161,20 @@ input[type="radio"]:checked + label {
 
     .billeterie{
         padding:50px 20px 50px 20px;
+    }
+
+    .resa{
+        display:flex;
+        justify-content: space-between;
+        gap:50px;
+    }
+
+    .recap{
+        width:50%;
+    }
+
+    form{
+        width:50%;
     }
 }
 
@@ -148,6 +187,6 @@ input[type="radio"]:checked + label {
     }
 
     .billeterie{
-        padding:100px 20px 50px 100px;
+        padding:100px 100px 30px 100px;
     }
 }
