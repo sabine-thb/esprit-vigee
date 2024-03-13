@@ -22,7 +22,7 @@ header {
 .title {
     font-family: "Tan-Pearl", sans-serif;
     font-weight: 300;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     text-transform: uppercase;
     color: var(--blanc);
     letter-spacing: 5px;
@@ -54,14 +54,24 @@ header {
     gap:25px;
     padding:20px 0px 50px 0px;
     position:relative;
-    z-index:1000;
+    z-index:100;
 }
 
-.navLinkBilleterie{
+.navButton{
+    font-family: "PromptRegular", sans-serif;
     border:2px solid var(--marron);
     padding:15px;
     color:var(--marron);
     text-decoration:none;
+    background-color: var(--beige);
+    cursor: pointer;
+}
+
+
+.active {
+    /* Style pour le lien actif */
+    color:var(--blanc);
+    background-color:var(--marron);
 }
 
 /*Je stylise les composants en fonction des étapes*/
@@ -95,13 +105,18 @@ input[type=radio]+label {
     color:var(--blanc);
     border-color: #ddd;
     width: fit-content;
+    cursor: pointer;
 }
 
 input[type=radio]{
-    visibility: hidden;
+    /* visibility: hidden;
     cursor:pointer;
     width:0;
-    position: absolute;
+    position: absolute; */
+
+    visibility: hidden;
+    width: 0;
+    margin: 0;
 }
 
 input[type="radio"]:checked + label {
@@ -109,7 +124,7 @@ input[type="radio"]:checked + label {
     color: #fff; /* Optionnel: changer la couleur du texte */
   }
 
-.submit{
+.submit, .valid{
     font-family: "PromptRegular", sans-serif;
     margin-bottom: 1rem;
     margin-right: 2rem;
@@ -129,9 +144,9 @@ input[type="radio"]:checked + label {
     background-color: var(--blanc);
     padding:25px;
 }
-p{
+/* p{
     text-align: center;
-}
+} */
 .affiche{
     width:200px;
 }
@@ -139,6 +154,45 @@ p{
 .titleBillet{
     font-family:"PromptBold", sans-serif
 }
+
+.etape{
+    margin-bottom:30px;
+}
+
+.resa{
+    margin-bottom:60px;
+}
+
+.numberBillets{
+    text-align: center;
+    border:solid 1px var(--marron);
+    /* border:solid 2px var(--marron); */
+}
+
+#number, .increment, .decrement{
+    font-family: "PromptBold", sans-serif;
+    border: 1px solid var(--marron); /* Ajoute une bordure noire de 2 pixels */
+    /* color: var(--blanc); */
+    color: var(--beige);
+    -webkit-text-stroke: 1px var(--marron);  /*Contour marron */
+    /* -webkit-text-stroke: 2px var(--marron); Contour marron */
+    font-size: 6rem;
+    border:0;
+    background-color: var(--beige);
+}
+
+#number{
+    text-align: center;
+    width:120px;
+    padding:0;
+}
+
+.increment, .decrement{
+    cursor:pointer;
+}
+
+
+
 
 @media(min-width:450px){
     .recap{
@@ -150,6 +204,14 @@ p{
 
     p{
         text-align: left;
+    }
+
+    #number, .increment, .decrement{
+        font-size:9rem;
+    }
+
+    #number{
+        width:200px;
     }
 }
 
@@ -167,14 +229,50 @@ p{
         display:flex;
         justify-content: space-between;
         gap:50px;
+        
     }
 
     .recap{
         width:50%;
+        height:fit-content;
     }
 
     form{
         width:50%;
+    }
+
+    .etape{
+        margin-bottom:0px;
+    }
+
+    .affiche{
+        width:100px;
+    }
+
+    #number, .increment, .decrement{
+        font-size:6rem;
+    }
+
+    #number{
+        width:150px;
+    }
+}
+
+@media(min-width:900px){
+    .affiche{
+        width:200px;
+    }
+
+    #number, .increment, .decrement{
+        font-size:9rem;
+    }
+
+    #number{
+        width:200px;
+    }
+
+    .numberBillets{
+        height:100%;
     }
 }
 

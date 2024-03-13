@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="./styles/billeterie.css">
     <link rel="stylesheet" href="./styles/footer.css">
 
+    <script src="./script/billeterie.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 </head>
 <body>
     <header class="halo-container">
@@ -65,76 +67,86 @@
         <h1 class="title">Billeterie</h1>
         <div class="degrade"></div>
         <div class="navBilleterie">
-            <a href="billeterie.php?action=dateVisite" class="navLinkBilleterie">Date de visite</a>
-            <a href="billeterie.php?action=nombreBillets" class="navLinkBilleterie">Nombre de billets</a>
-            <a href="billeterie.php?action=coordonnees" class="navLinkBilleterie">Coordonnées</a>
+            <!-- <a href="#etape1" onclick="afficherEtape('etape1')" class="navLinkBilleterie">Date de visite</a>
+            <a href="#etape2" onclick="afficherEtape('etape2')" class="navLinkBilleterie">Nombre de billets</a>
+            <a href="#etape3" onclick="afficherEtape('etape3')"class="navLinkBilleterie">Coordonnées</a> -->
+
+            <button class="navButton" onclick="afficherEtape('etape1')">Date de visite</button>
+            <button class="navButton" onclick="afficherEtape('etape2')">Nombre de billets</button>
+            <button class="navButton" onclick="afficherEtape('etape3')">Coordonnées</button>
         </div>
         <div class="resa">
 
-        <?php 
-        if (isset($_GET['absence'])) {
-            echo "<p class=\"txtRouge\">Votre absence a bien été insérée.</p>";
-        }?>
-            <?php  if (isset($_GET['action']) && $_GET['action'] == 'dateVisite') : ?>
-                <form action="billeterie.php?action=nombreBillets" method="POST">
-                    <p>
-                        <label for="date">Choisissez une date :</label>
-                        <input type="date" id="date" name="date">
-                    </p>
-                    <p>
-                        <label for="date">Choisissez un horaire :</label><br>
-                        <div class="horaires">
-                            
-                            <input type="radio" id="radio1" name="horaire" value="10:00" required="">
-                            <label for="radio1">10:00</label>
-                            <input type="radio" id="radio2" name="horaire" value="11:00" required="">
-                            <label for="radio2">11:00</label>
-                            <input type="radio" id="radio3" name="horaire" value="12:00" required="">
-                            <label for="radio3">12:00</label>
-                            <input type="radio" id="radio4" name="horaire" value="13:00" required="">
-                            <label for="radio4">13:00</label>
-                            <input type="radio" id="radio5" name="horaire" value="14:00">
-                            <label for="radio5">14:00</label>
-                            <input type="radio" id="radio6" name="horaire" value="15:00">
-                            <label for="radio6">15:00</label>
-                            <input type="radio" id="radio7" name="horaire" value="16:00">
-                            <label for="radio7">16:00</label>
-                            <input type="radio" id="radio8" name="horaire" value="17:00">
-                            <label for="radio8">17:00</label>
-                            <input type="radio" id="radio9" name="horaire" value="18:00">
-                            <label for="radio9">18:00</label>
-                        </div>
-                    </p>
-                    <p>
-                        <input type="submit" value="valider" class="submit">
-                    </p>
-
-                </form>
-                <div class="recap">
-                    <img src="./styles/images/afficheExpo.png" class="affiche" alt="">
-                    <div class= recapTxt>
-                        <p class="titleBillet">Exposition Esprit Vigée</p>
-                        <p>Mode d'obtention : e-ticket, gratuit</p>
+                <form action="traiteResa.php" method="POST">
+                    <div class="etape" id="etape1">
+                        <p>
+                            <label for="date">Choisissez une date :</label>
+                            <input type="date" id="date" name="date">
+                        </p>
+                        <p>
+                            <label for="date">Choisissez un horaire :</label><br>
+                            <div class="horaires">
+                                
+                                <input type="radio" id="radio1" name="horaire" value="10:00" required="">
+                                <label for="radio1">10:00</label>
+                                <input type="radio" id="radio2" name="horaire" value="11:00" required="">
+                                <label for="radio2">11:00</label>
+                                <input type="radio" id="radio3" name="horaire" value="12:00" required="">
+                                <label for="radio3">12:00</label>
+                                <input type="radio" id="radio4" name="horaire" value="13:00" required="">
+                                <label for="radio4">13:00</label>
+                                <input type="radio" id="radio5" name="horaire" value="14:00" required="">
+                                <label for="radio5">14:00</label>
+                                <input type="radio" id="radio6" name="horaire" value="15:00" required="">
+                                <label for="radio6">15:00</label>
+                                <input type="radio" id="radio7" name="horaire" value="16:00" required="">
+                                <label for="radio7">16:00</label>
+                                <input type="radio" id="radio8" name="horaire" value="17:00" required="">
+                                <label for="radio8">17:00</label>
+                                <input type="radio" id="radio9" name="horaire" value="18:00" required="">
+                                <label for="radio9">18:00</label>
+                            </div>
+                        </p>
+                        <button type="button" class="valid one" onclick="passerEtape('etape1', 'etape2')">Valider</button>
                     </div>
-                </div>
-                
-
-            <?php endif; ?>
-
-            <?php  if (isset($_GET['action']) && $_GET['action'] == 'nombreBillets') : 
-                $date=$_POST["date"];
-                $horaire=$_POST["horaire"];      
-
-            ?>
-                <form action="billeterie.php?action=coordonnées" method="POST">
-                    <p>
-                        <label for="number">Nombre de billets uniques pour l'exposition :</label>
-                        <input type="date" id="date" name="number">
-                    </p>
                     
-                    <p>
-                        <input type="submit" value="valider" class="submit">
-                    </p>
+                    <div class="etape" id="etape2" style="display: none;">
+                        <p>
+                            <label for="number">Nombre de billets uniques pour l'exposition :</label>
+                        </p>
+                        <p class="numberBillets">
+                            <button class='decrement qteTotale' type='button'>-</button>
+                            <input type="number" id="number" name="number" min='1' max='10' value="1" readonly required>  
+                            <button class='increment qteTotale' type='button'>+</button>
+
+                        </p>
+                            
+                        </p>
+                        <button type="button" class="valid two" onclick="passerEtape('etape2', 'etape3')">Valider</button>
+                    </div>
+                    <div class="etape" id="etape3" style="display: none;">
+                        <p>
+                            <label for="nom">Nom : </label>
+                            <input type="text" id="nom" name="nom" reqauired>
+                        </p>
+                        <p>
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </p>
+                        <p>
+                            <label for="mail">Adresse mail :</label>
+                            <input type="mail" id="mail" name="mail" required>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="conditions" name="conditions" required>
+                            <label for="conditions">J’accèpte les conditions générales de ventes de l’exposition Esprit Vigée</label>
+                        </p>
+                        <p>
+                            <input type="submit" value="valider" class="submit">
+                        </p>
+                    </div>
+        
+                    
 
                 </form>
                 <div class="recap">
@@ -142,23 +154,11 @@
                     <div class= recapTxt>
                         <p class="titleBillet">Exposition Esprit Vigée</p>
                         <p>Mode d'obtention : e-ticket, gratuit</p>
-                        <p>Date : le <?php echo $date ?> à <?php echo $horaire ?></p>
+                        <p class="date" style="display: none;">Date : le <span id="dateChoisie"></span> à <span id="horaireChoisi"></span></p>
+                        <p class="nbBillets" style="display: none;">Nombre de billets : <span id="nombreBillets"></span></p>
                     </div>
                 </div>
-            <?php endif; ?>
-
-            <?php  if (isset($_GET['action']) && $_GET['action'] == 'coordonnees') : ?>
-                <!-- Code HTML pour l'action 'coordonnées' -->
-            <?php endif; ?>
             
-            
-        </div>
-
-        <script>
-        window.onload = function() {
-            document.getElementById('date').focus();
-        };
-        </script>
         
 
 
@@ -168,7 +168,7 @@
 
 
 
-    <!-- <footer>
+    <footer>
             <div class="logoContainer">
                 <img src="./styles/images/logo.png" class="logoFooter" alt="">
                 <div>
@@ -202,10 +202,11 @@
 
             </div>
 
-        </footer> -->
+        </footer>
 
     <script src="./script/menu.js"></script>
     <script src="./script/halo.js"></script>
+    
 
     
 </body>
