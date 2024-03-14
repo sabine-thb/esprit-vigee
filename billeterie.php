@@ -10,18 +10,12 @@
     <link rel="stylesheet" href="./styles/billeterie.css">
     <link rel="stylesheet" href="./styles/footer.css">
 
-<<<<<<< HEAD
-=======
     <script src="./script/billeterie.js"></script>
->>>>>>> a6638c271c39af8bf777f80187d260c747b65758
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<<<<<<< HEAD
-=======
     
->>>>>>> a6638c271c39af8bf777f80187d260c747b65758
 </head>
 <body>
     <header class="halo-container">
@@ -73,46 +67,6 @@
         <h1 class="title">Billeterie</h1>
         <div class="degrade"></div>
         <div class="navBilleterie">
-<<<<<<< HEAD
-            <a href="billeterie.php?action=dateVisite" class="navLinkBilleterie">Date de visite</a>
-            <a href="billeterie.php?action=nombreBillets" class="navLinkBilleterie">Nombre de billets</a>
-            <a href="billeterie.php?action=coordonnées" class="navLinkBilleterie">Coordonnées</a>
-        </div>
-        <div class="resa">
-            <?php if($_GET['action'] == 'dateVisite'): ?>
-                <form action="billeterie.php?action=nombreBillets">
-                    <p>
-                        <label for="date">Choisissez une date :</label>
-                        <input type="date" id="date">
-                    </p>
-                    <p>
-                        <label for="date">Choisissez un horaire :</label><br>
-                        <div class="horaires">
-                            
-                            <input type="radio" id="radio1" name="horaire" value="10:00" required="">
-                            <label for="radio1">10:00</label>
-                            <input type="radio" id="radio2" name="horaire" value="11:00" required="">
-                            <label for="radio2">11:00</label>
-                            <input type="radio" id="radio3" name="horaire" value="12:00" required="">
-                            <label for="radio3">12:00</label>
-                            <input type="radio" id="radio4" name="horaire" value="13:00" required="">
-                            <label for="radio4">13:00</label>
-                            <input type="radio" id="radio5" name="horaire" value="14:00">
-                            <label for="radio5">14:00</label>
-                            <input type="radio" id="radio6" name="horaire" value="15:00">
-                            <label for="radio6">15:00</label>
-                            <input type="radio" id="radio7" name="horaire" value="16:00">
-                            <label for="radio7">16:00</label>
-                            <input type="radio" id="radio8" name="horaire" value="17:00">
-                            <label for="radio8">17:00</label>
-                            <input type="radio" id="radio9" name="horaire" value="18:00">
-                            <label for="radio9">18:00</label>
-                        </div>
-                    </p>
-                    <p>
-                        <input type="submit" value="valider" class="submit">
-                    </p>
-=======
             <!-- <a href="#etape1" onclick="afficherEtape('etape1')" class="navLinkBilleterie">Date de visite</a>
             <a href="#etape2" onclick="afficherEtape('etape2')" class="navLinkBilleterie">Nombre de billets</a>
             <a href="#etape3" onclick="afficherEtape('etape3')"class="navLinkBilleterie">Coordonnées</a> -->
@@ -206,7 +160,6 @@
                             <input type="submit" value="valider" class="submit">
                         </p>
                     </div>
->>>>>>> a6638c271c39af8bf777f80187d260c747b65758
 
                 </form>
                 <div class="recap">
@@ -214,51 +167,17 @@
                     <div class= recapTxt>
                         <p class="titleBillet">Exposition Esprit Vigée</p>
                         <p>Mode d'obtention : e-ticket, gratuit</p>
-<<<<<<< HEAD
-                    </div>
-                </div>
-                
-                
-                
-
-            <?php endif; ?>
-
-            <?php if($_GET['action'] == 'nombreBillets'): ?>
-                <!-- Code HTML pour l'action 'nombreBillets' -->
-            <?php endif; ?>
-
-            <?php if($_GET['action'] == 'coordonnées'): ?>
-                <!-- Code HTML pour l'action 'coordonnées' -->
-            <?php endif; ?>
-            
-            
-        </div>
-
-        <script>
-        window.onload = function() {
-            document.getElementById('date').focus();
-        };
-        </script>
-        
-
-
-=======
                         <p class="date" style="display: none;">Date : le <span id="dateChoisie"></span> à <span id="horaireChoisi"></span></p>
                         <p class="nbBillets" style="display: none;">Nombre de billets : <span id="nombreBillets"></span></p>
                     </div>
                 </div>
->>>>>>> a6638c271c39af8bf777f80187d260c747b65758
 
     </section>
 
 
 
 
-<<<<<<< HEAD
-    <!-- <footer>
-=======
     <footer>
->>>>>>> a6638c271c39af8bf777f80187d260c747b65758
             <div class="logoContainer">
                 <img src="./styles/images/logo.png" class="logoFooter" alt="">
                 <div>
@@ -292,18 +211,11 @@
 
             </div>
 
-<<<<<<< HEAD
-        </footer> -->
-
-    <script src="./script/menu.js"></script>
-    <script src="./script/halo.js"></script>
-=======
         </footer>
 
     <script src="./script/menu.js"></script>
     <script src="./script/halo.js"></script>
     
->>>>>>> a6638c271c39af8bf777f80187d260c747b65758
 
     
 </body>
