@@ -22,7 +22,11 @@ header {
 .title {
     font-family: "Tan-Pearl", sans-serif;
     font-weight: 300;
+<<<<<<< HEAD
     font-size: 2.4rem;
+=======
+    font-size: 2.3rem;
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
     text-transform: uppercase;
     color: var(--blanc);
     letter-spacing: 5px;
@@ -54,14 +58,34 @@ header {
     gap:25px;
     padding:20px 0px 50px 0px;
     position:relative;
+<<<<<<< HEAD
     z-index:1000;
 }
 
 .navLinkBilleterie{
+=======
+    z-index:100;
+}
+
+.navButton{
+    font-family: "PromptRegular", sans-serif;
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
     border:2px solid var(--marron);
     padding:15px;
     color:var(--marron);
     text-decoration:none;
+<<<<<<< HEAD
+=======
+    background-color: var(--beige);
+    cursor: pointer;
+}
+
+
+.active {
+    /* Style pour le lien actif */
+    color:var(--blanc);
+    background-color:var(--marron);
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
 }
 
 /*Je stylise les composants en fonction des étapes*/
@@ -95,6 +119,7 @@ input[type=radio]+label {
     color:var(--blanc);
     border-color: #ddd;
     width: fit-content;
+<<<<<<< HEAD
 }
 
 input[type=radio]{
@@ -102,6 +127,20 @@ input[type=radio]{
     cursor:pointer;
     width:0;
     position: absolute;
+=======
+    cursor: pointer;
+}
+
+input[type=radio]{
+    /* visibility: hidden;
+    cursor:pointer;
+    width:0;
+    position: absolute; */
+
+    visibility: hidden;
+    width: 0;
+    margin: 0;
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
 }
 
 input[type="radio"]:checked + label {
@@ -109,7 +148,11 @@ input[type="radio"]:checked + label {
     color: #fff; /* Optionnel: changer la couleur du texte */
   }
 
+<<<<<<< HEAD
 .submit{
+=======
+.submit, .valid{
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
     font-family: "PromptRegular", sans-serif;
     margin-bottom: 1rem;
     margin-right: 2rem;
@@ -129,9 +172,15 @@ input[type="radio"]:checked + label {
     background-color: var(--blanc);
     padding:25px;
 }
+<<<<<<< HEAD
 p{
     text-align: center;
 }
+=======
+/* p{
+    text-align: center;
+} */
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
 .affiche{
     width:200px;
 }
@@ -140,6 +189,48 @@ p{
     font-family:"PromptBold", sans-serif
 }
 
+<<<<<<< HEAD
+=======
+.etape{
+    margin-bottom:30px;
+}
+
+.resa{
+    margin-bottom:60px;
+}
+
+.numberBillets{
+    text-align: center;
+    border:solid 1px var(--marron);
+    /* border:solid 2px var(--marron); */
+}
+
+#number, .increment, .decrement{
+    font-family: "PromptBold", sans-serif;
+    border: 1px solid var(--marron); /* Ajoute une bordure noire de 2 pixels */
+    color: var(--blanc);
+    /* color: var(--beige); */
+    -webkit-text-stroke: 1px var(--marron);  Contour marron
+    /*-webkit-text-stroke: 2px var(--marron);  Contour marron */
+    font-size: 6rem;
+    border:0;
+    background-color: var(--beige);
+}
+
+#number{
+    text-align: center;
+    width:120px;
+    padding:0;
+}
+
+.increment, .decrement{
+    cursor:pointer;
+}
+
+
+
+
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
 @media(min-width:450px){
     .recap{
         flex-direction: row;
@@ -151,6 +242,17 @@ p{
     p{
         text-align: left;
     }
+<<<<<<< HEAD
+=======
+
+    #number, .increment, .decrement{
+        font-size:9rem;
+    }
+
+    #number{
+        width:200px;
+    }
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
 }
 
 @media(min-width:750px){
@@ -167,15 +269,60 @@ p{
         display:flex;
         justify-content: space-between;
         gap:50px;
+<<<<<<< HEAD
+=======
+        
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
     }
 
     .recap{
         width:50%;
+<<<<<<< HEAD
+=======
+        height:fit-content;
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
     }
 
     form{
         width:50%;
     }
+<<<<<<< HEAD
+=======
+
+    .etape{
+        margin-bottom:0px;
+    }
+
+    .affiche{
+        width:100px;
+    }
+
+    #number, .increment, .decrement{
+        font-size:6rem;
+    }
+
+    #number{
+        width:150px;
+    }
+}
+
+@media(min-width:900px){
+    .affiche{
+        width:200px;
+    }
+
+    #number, .increment, .decrement{
+        font-size:9rem;
+    }
+
+    #number{
+        width:200px;
+    }
+
+    .numberBillets{
+        height:100%;
+    }
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
 }
 
 
@@ -190,3 +337,20 @@ p{
         padding:100px 100px 30px 100px;
     }
 }
+<<<<<<< HEAD
+=======
+
+@media(min-width:1250px){
+    .titleBillet {
+        font-size: 1.3rem;
+        top:-100px;
+
+    }
+
+    .recap{
+        gap:20px;
+        justify-content: flex-start;
+    }
+
+}
+>>>>>>> a6638c271c39af8bf777f80187d260c747b65758
