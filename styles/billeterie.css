@@ -174,7 +174,7 @@ input[type="radio"]:checked + label {
     border: 1px solid var(--marron); /* Ajoute une bordure noire de 2 pixels */
     color: var(--blanc);
     /* color: var(--beige); */
-    -webkit-text-stroke: 1px var(--marron);  Contour marron
+    -webkit-text-stroke: 1px var(--marron); /* Contour marron*/
     /*-webkit-text-stroke: 2px var(--marron);  Contour marron */
     font-size: 6rem;
     border:0;
