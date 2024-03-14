@@ -75,8 +75,23 @@
             <button class="navButton" onclick="afficherEtape('etape2')">Nombre de billets</button>
             <button class="navButton" onclick="afficherEtape('etape3')">Coordonnées</button>
         </div>
-        <div class="resa">
+        <?php if (isset($_GET["resa"] )){  
+            echo "<p class=\"reponse\">Votre réservation a bien été prise en compte. Un mail vous a été transmis.</p>";
+        } 
 
+        if (isset($_GET["err"]) && $_GET["err"] === "date"){  
+            echo "<p class=\"reponse\">La date de visite que vous avez sélectionnée est déjà passée.</p>";         
+        }
+
+        if (isset($_GET["err"]) && $_GET["err"] === "mail"){  
+            echo "<p class=\"reponse\">Le mail que vous avez saisi est invalide.</p>";         
+        }
+        if (isset($_GET["err"]) && $_GET["err"] === "empty"){  
+            echo "<p class=\"reponse\">Veuillez remplir tous les champs.</p>";         
+        }
+
+        ?> 
+        <div class="resa">
                 <form action="traiteResa.php" method="POST">
                     <div class="etape" id="etape1">
                         <p>
@@ -87,23 +102,23 @@
                             <label for="date">Choisissez un horaire :</label><br>
                             <div class="horaires">
                                 
-                                <input type="radio" id="radio1" name="horaire" value="10:00" required="">
+                                <input type="radio" id="radio1" name="horaire" value="10:00" >
                                 <label for="radio1">10:00</label>
-                                <input type="radio" id="radio2" name="horaire" value="11:00" required="">
+                                <input type="radio" id="radio2" name="horaire" value="11:00" >
                                 <label for="radio2">11:00</label>
-                                <input type="radio" id="radio3" name="horaire" value="12:00" required="">
+                                <input type="radio" id="radio3" name="horaire" value="12:00" >
                                 <label for="radio3">12:00</label>
-                                <input type="radio" id="radio4" name="horaire" value="13:00" required="">
+                                <input type="radio" id="radio4" name="horaire" value="13:00">
                                 <label for="radio4">13:00</label>
-                                <input type="radio" id="radio5" name="horaire" value="14:00" required="">
+                                <input type="radio" id="radio5" name="horaire" value="14:00" ">
                                 <label for="radio5">14:00</label>
-                                <input type="radio" id="radio6" name="horaire" value="15:00" required="">
+                                <input type="radio" id="radio6" name="horaire" value="15:00">
                                 <label for="radio6">15:00</label>
-                                <input type="radio" id="radio7" name="horaire" value="16:00" required="">
+                                <input type="radio" id="radio7" name="horaire" value="16:00" >
                                 <label for="radio7">16:00</label>
-                                <input type="radio" id="radio8" name="horaire" value="17:00" required="">
+                                <input type="radio" id="radio8" name="horaire" value="17:00" >
                                 <label for="radio8">17:00</label>
-                                <input type="radio" id="radio9" name="horaire" value="18:00" required="">
+                                <input type="radio" id="radio9" name="horaire" value="18:00" >
                                 <label for="radio9">18:00</label>
                             </div>
                         </p>
@@ -116,7 +131,7 @@
                         </p>
                         <p class="numberBillets">
                             <button class='decrement qteTotale' type='button'>-</button>
-                            <input type="number" id="number" name="number" min='1' max='10' value="1" readonly required>  
+                            <input type="number" id="number" name="tickets" min='1' max='10' value="1" readonly >  
                             <button class='increment qteTotale' type='button'>+</button>
 
                         </p>
@@ -131,22 +146,20 @@
                         </p>
                         <p>
                             <label for="prenom">Prénom :</label>
-                            <input type="text" id="prenom" name="prenom" required>
+                            <input type="text" id="prenom" name="prenom" >
                         </p>
                         <p>
                             <label for="mail">Adresse mail :</label>
-                            <input type="mail" id="mail" name="mail" required>
+                            <input type="mail" id="mail" name="mail" >
                         </p>
                         <p>
                             <input type="checkbox" id="conditions" name="conditions" required>
-                            <label for="conditions">J’accèpte les conditions générales de ventes de l’exposition Esprit Vigée</label>
+                            <label for="conditions">J’accepte les conditions générales de ventes de l’exposition Esprit Vigée</label>
                         </p>
                         <p>
                             <input type="submit" value="valider" class="submit">
                         </p>
                     </div>
-        
-                    
 
                 </form>
                 <div class="recap">
@@ -158,10 +171,6 @@
                         <p class="nbBillets" style="display: none;">Nombre de billets : <span id="nombreBillets"></span></p>
                     </div>
                 </div>
-            
-        
-
-
 
     </section>
 

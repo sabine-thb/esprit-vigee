@@ -38,7 +38,7 @@ function passerEtape(etapeActuelle, etapeSuivante) {
         document.getElementById('horaireChoisi').textContent = donnees['horaire'];
         document.querySelector('.date').style.display = 'block'; // Afficher l'élément avec la classe .date
     } else if (etapeSuivante === 'etape3') {
-        document.getElementById('nombreBillets').textContent = donnees['number'];
+        document.getElementById('nombreBillets').textContent = donnees['tickets'];
         document.querySelector('.nbBillets').style.display = 'block'; // Afficher l'élément avec la classe .nbBillets
     }
 }
