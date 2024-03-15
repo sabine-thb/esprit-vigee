@@ -5,13 +5,26 @@
 }
 
 body {
-    background-image: url(./images/backGallerie2.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+.background{
+    background-image: url(./images/fondGallerie.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:0;
+    width:100%;
+    height:100%;
+}
+
+section, footer{
+    position:relative;
+    z-index: 1;
 }
 
 header {
@@ -21,6 +34,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index:20;
 }
 
 .title {

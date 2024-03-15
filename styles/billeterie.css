@@ -166,6 +166,8 @@ input[type="radio"]:checked + label {
 .numberBillets{
     text-align: center;
     border:solid 1px var(--marron);
+    /* display:flex;
+    justify-content: center; */
     /* border:solid 2px var(--marron); */
 }
 

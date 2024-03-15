@@ -79,7 +79,7 @@ if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['mail']) || 
     // Vous pouvez vérifier $response pour voir la réponse de l'API
 
     // Redirection vers la page de succès
-    // header('Location: billeterie.php?resa=ok');
+    header('Location: billeterie.php?resa=ok');
     exit(); // Arrêter le script
 }
 
