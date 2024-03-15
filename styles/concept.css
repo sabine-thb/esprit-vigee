@@ -4,15 +4,31 @@
     box-sizing: border-box;
 }
 
-header {
+.background{
     background-image: url(./images/fondConcept.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: bottom;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:0;
+    width:100%;
+    height:100%;
+}
+
+header {  
     height: 100vh;
     min-height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index:20;
+}
+
+section, footer{
+    position:relative;
+    z-index: 1;
 }
 
 
