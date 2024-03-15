@@ -1,0 +1,57 @@
+{
+    "en": {
+        "descrExpo": { "class": "descrExpo", "text": "An interactive exhibition about an invisible artist" },
+        "titleSection": { "class": "titleSection", "text": "The Artist" },
+        "p1": { "class": "p1", "text": "Élisabeth Vigée Le Brun, Marie-Antoinette's official portraitist, is a little-known painter. Yet her life and career deserve special attention." },
+        "p2": { "class": "p2", "text": "Yes, this revolutionary of brushes metamorphosed the art of portraiture, immortalizing faces imbued with life and joy. At the time, to show one's teeth and mouth was to show one's emotions. It wasn't done. Generally, open mouths were used to represent the hunger of the poor, the folly of lost hopes, or the innocence of children." },
+        "p3": { "class": "p3", "text": "It was Elisabeth who introduced the era of the smile into portrait painting. Born into a prodigious family, she sparkled from an early age, propelled by an exceptional talent."},
+        "p4": { "class": "p4", "text": "Élisabeth Vigée Le Brun, a visionary who transcended the conventions of her time, leaving an indelible mark on the history of art." },
+        ".titleSection2": {"class": "titleSection2","text":"Gallery"},
+        ".linkGallerie.one": {"class": "linkGallerie.one","text":"See more"},
+        ".linkGallerie.two": {"class": "linkGallerie.two","text":"See more"},
+        ".immersionTitle": {"class": "immersionTitle","text":"Complete immersion"},
+        "p5": { "class": "p5", "text": "Immerse yourself in the painter's world and discover her works as you've never seen them before."},
+        "p6": { "class": "p6", "text": "This experience invites you on a journey beyond the boundaries of traditional art, where colors merge into a visual symphony and emotions take shape under the painter's deft hand."},
+        "p7": { "class": "p7", "text": "A unique, interactive and unforgettable experience awaits you."},
+        "reserve": { "class": "reserve", "text": "Reserve !"},
+        "agence": { "class": "agence", "text": "An exhibition by Gallerie Past'elle"}
+      
+
+
+
+
+
+        
+
+
+
+
+
+
+       
+    },
+    "fr": {
+        "descrExpo": { "class": "descrExpo", "text": "Une exposition interactive sur une peintre invisible." },
+        "titleSection": { "class": "titleSection", "text": "L'artiste" },
+        "p1": { "class": "p1", "text": "Élisabeth Vigée Le Brun, portraitiste officielle de Marie-Antoinette, est une peintre méconnue du grand public. Pourtant, son parcours et sa vie mériteraient une attention particulière." },
+        "p2": { "class": "p2", "text": "Cette révolutionnaire des pinceaux est à l'origine de l'introduction des sourires dans les portraits peints. À l'époque, montrer ses dents et sa bouche était synonyme d'exprimer des émotions. Ce n'était pas fait. Généralement, les bouches ouvertes étaient utilisées pour représenter la faim des pauvres, la folie des espoirs perdus ou l'innocence des enfants." },
+        "p3": { "class": "p3", "text": "Issue d’une famille prodigieuse, elle a étincelé dès son plus jeune âge, propulsée par un talent exceptionnel. Sa jeunesse éclatante et son génie artistique ont fait d'elle, à seulement 20 ans, la portraitiste la plus en vogue de France, lui ouvrant les portes de la cour." },
+        "p4": { "class": "p4", "text": "Élisabeth Vigée Le Brun, une visionnaire qui a transcendé les conventions de son époque, laisse une empreinte indélébile dans l'histoire de l'art." },
+        ".titleSection2": {"class": "titleSection2","text":"Gallerie"},
+        ".linkGallerie.one": {"class": "linkGallerie.one","text":"Voir plus"},
+        ".linkGallerie.two": {"class": "linkGallerie.two","text":"Voir plus"},
+        ".immersionTitle": {"class": "immersionTitle","text":"Une immersion complète"},
+        "p5": { "class": "p5", "text": "Plongez dans l'univers de la peintre et découvrez ses oeuvres comme vous ne les avez jamais vues."},
+        "p6": { "class": "p6", "text": "Cette expérience vous invite à un voyage au-delà des limites de l'art traditionnel, où les couleurs se fondent dans une symphonie visuelle et où les émotions prennent forme sous la main habile de la peintre."},
+        "p7": { "class": "p7", "text": "Une expérience unique, interactive et inoubliable vous attend."},
+        "reserve": { "class": "reserve", "text": "Réserve !"},
+        "agence": { "class": "agence", "text": "Une exposition de Gallerie Past'elle"}
+       
+
+
+
+
+        
+
+    }
+}
