@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./styles/menu.css">
     <link rel="stylesheet" href="./styles/billeterie.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="icon" href="./styles/images/logowhitos.png">
+
 
     <script src="./script/billeterie.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
