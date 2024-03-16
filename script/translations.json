@@ -43,6 +43,18 @@
         "tp6": { "class": "tp6", "text": "Modification of the general terms and conditions of sale"},
         "tp7": { "class": "tp7", "text": "Applicable law and jurisdiction"},
 
+        "ctt": { "class": "ctt", "text": "A question to ask us ? It's over here !"},
+        "tc": { "class": "tc", "text": "If you have any questions about our interactive exhibition, please contact us at the following e-mail address"},
+        "textCreateurs": { "class": "textCreateurs", "text": "You will then be put in contact with our exhibition team."},
+        "r1": { "class": "r1", "text": "Full-stack developer, UI designer"},
+        "r2": { "class": "r2", "text": "Project leader and front-end developer"},
+        "r3": { "class": "r3", "text": "Graphic designer, UX/UI designer"},
+        "r4": { "class": "r4", "text": "Graphic designer, community manager"},
+        "r5": { "class": "r5", "text": "Video editor, sound-designer"},
+        "r6": { "class": "r6", "text": "3D developer"},
+
+
+
 
         "cp1": { "class": "cp1", "text": " Tickets for the art exhibition are free. They cannot be sold. However, they can be reserved online or obtained on site, subject to availability."},
         "cp2": { "class": "cp2", "text": "Tickets can be booked online via the exhibition website or the website of the exhibition organizer. Tickets booked online are available at the exhibition entrance. Visitors must present their printed ticket or on their smartphone."},
@@ -51,6 +63,8 @@
         "cp5": { "class": "cp5", "text": "The exhibition organizer cannot be held responsible for any damage caused to visitors or their property during their visit to the exhibition. Visitors must comply with the exhibition's rules of safety and conduct."},
         "cp6": { "class": "cp6", "text": "These terms and conditions may be modified at any time by the organizer. The new terms and conditions will apply to all bookings made after their publication on the exhibition website."},
         "cp7": { "class": "cp7", "text": "These terms and conditions are governed by French law. Any dispute relating to their application or interpretation shall be submitted to the competent courts of France. By reserving a ticket for the free art exhibition, the visitor acknowledges having read and accepted these terms and conditions of sale."}
+
+    
 
 
     },
@@ -98,6 +112,18 @@
         "tp5": { "class": "tp5", "text": "Responsabilité de l'organisateur"},
         "tp6": { "class": "tp6", "text": "Modification des conditions générales de vente"},
         "tp7": { "class": "tp7", "text": "Droit applicable et juridiction compétente"},
+        
+
+        "ctt": { "class": "ctt", "text": "Une question à nous poser ? Par ici !"},
+        "tc": { "class": "tc", "text": "Pour toute question concernant notre exposition interactive, veuillez nous contacter à l’adresse mail suivante"},
+        "textCreateurs": { "class": "textCreateurs", "text": "Vous serez ainsi mis en relation avec notre équipe responsable de l’exposition."},
+        "r1": { "class": "r1", "text": "Développeuse full-stack, UI designer"},
+        "r2": { "class": "r2", "text": "Cheffe de projet, développeuse front-end"},
+        "r3": { "class": "r3", "text": "Graphiste, UX/UI designer"},
+        "r4": { "class": "r4", "text": "Graphiste, community manager"},
+        "r5": { "class": "r5", "text": "Monteur vidéos, sound-designer"},
+        "r6": { "class": "r6", "text": "Développeur 3D"},
+
 
         "cp1": { "class": "cp1", "text": "Les billets pour l'exposition d'art sont gratuits. Ils ne peuvent donc être vendus. Cependant, ils peuvent être réservés en ligne ou obtenus sur place dans la limite des places disponibles."},
         "cp2": { "class": "cp2", "text": "La réservation des billets peut être effectuée en ligne sur le site internet de l'exposition ou sur le site de l'organisateur de l'exposition. Les billets réservés en ligne sont disponibles à l'entrée de l'exposition. Les visiteurs doivent présenter leur billet imprimé ou sur leur smartphone."},
