@@ -65,6 +65,17 @@
     </header>
     <section class="billeterie">
         <h1 class="title">Billeterie</h1>
+
+        <div class="dropdown">
+      <img class="lang-icon" src="./styles/images/langue2.png" alt="Image">
+      <button id="dropdownBtn" class="dropbtn">Langage <img class="fl-icon" src="./styles/images/flechefren.png"
+          alt="Image">
+      </button>
+      <div id="dropdownContent" class="dropdown-content">
+        <a href="" class="fr">Français</a>
+        <a href="" class="en">Anglais</a>
+      </div>
+    </div>
         <div class="degrade"></div>
         <div class="navBilleterie">
             <!-- <a href="#etape1" onclick="afficherEtape('etape1')" class="navLinkBilleterie">Date de visite</a>
@@ -215,7 +226,8 @@
 
     <script src="./script/menu.js"></script>
     <script src="./script/halo.js"></script>
-    
+    <script src="./script/deroule.js"></script>
+
 
     
 </body>
