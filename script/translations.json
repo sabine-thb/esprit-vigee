@@ -61,8 +61,29 @@
 
         "descrGallerie": { "class": "descrGallerie", "text": "Excerpt from the paintings presented during the interactive exhibition"},
 
+        "b1": { "class": "b1", "text": "Tickets"},
+        "btnb1": { "class": "btnb1", "text": "Date of visit"},
+        "btnb2": { "class": "btnb2", "text": "Quantity of tickets"},
+        "btnb3": { "class": "btnb3", "text": "Contact details"},
+        "datechoose": { "class": "datechoose", "text": "Choose a date"},
+        "timechoose": { "class": "timechoose", "text": "Choose a time"},
+        "valid": { "class": "valid", "text": "Confirm"},
+        
+        "valid.two": { "class": "valid.two", "text": "Confirm"},
+        "titleBillet": { "class": "titleBillet", "text": "Exhibition Esprit Vigée"},
+        "obtention": { "class": "obtention", "text": "Method of obtaining: e-ticket, free"},
+        "conditions": { "class": "conditions", "text": "I accept the general conditions of sale of the Esprit Vigée exhibition"},
+        "namee": { "class": "namee", "text": "Last name"},
+        "firstname": { "class": "firstname", "text": "First name"},
+        "mail": { "class": "mail", "text": "Mail address"},
+
+
+
+
+        "numberbill": { "class": "numberbill", "text": "Number of single tickets for the exhibition :"},
 
         
+
 
 
         "cp1": { "class": "cp1", "text": " Tickets for the art exhibition are free. They cannot be sold. However, they can be reserved online or obtained on site, subject to availability."},
@@ -74,79 +95,6 @@
         "cp7": { "class": "cp7", "text": "These terms and conditions are governed by French law. Any dispute relating to their application or interpretation shall be submitted to the competent courts of France. By reserving a ticket for the free art exhibition, the visitor acknowledges having read and accepted these terms and conditions of sale."}
 
     
-
-
-    },
-    "fr": {
-        "descrExpo": { "class": "descrExpo", "text": "Une exposition interactive sur une peintre invisible." },
-        "titleSection": { "class": "titleSection", "text": "L'artiste" },
-        "p1": { "class": "p1", "text": "Élisabeth Vigée Le Brun, portraitiste officielle de Marie-Antoinette, est une peintre méconnue du grand public. Pourtant, son parcours et sa vie mériteraient une attention particulière." },
-        "p2": { "class": "p2", "text": "Cette révolutionnaire des pinceaux est à l'origine de l'introduction des sourires dans les portraits peints. À l'époque, montrer ses dents et sa bouche était synonyme d'exprimer des émotions. Ce n'était pas fait. Généralement, les bouches ouvertes étaient utilisées pour représenter la faim des pauvres, la folie des espoirs perdus ou l'innocence des enfants." },
-        "p3": { "class": "p3", "text": "Issue d’une famille prodigieuse, elle a étincelé dès son plus jeune âge, propulsée par un talent exceptionnel. Sa jeunesse éclatante et son génie artistique ont fait d'elle, à seulement 20 ans, la portraitiste la plus en vogue de France, lui ouvrant les portes de la cour." },
-        "p4": { "class": "p4", "text": "Élisabeth Vigée Le Brun, une visionnaire qui a transcendé les conventions de son époque, laisse une empreinte indélébile dans l'histoire de l'art." },
-        ".titleSection2": {"class": "titleSection2","text":"Gallerie"},
-        ".linkGallerie.one": {"class": "linkGallerie.one","text":"Voir plus"},
-        ".linkGallerie.two": {"class": "linkGallerie.two","text":"Voir plus"},
-        ".immersionTitle": {"class": "immersionTitle","text":"Une immersion complète"},
-        "p5": { "class": "p5", "text": "Plongez dans l'univers de la peintre et découvrez ses oeuvres comme vous ne les avez jamais vues."},
-        "p6": { "class": "p6", "text": "Cette expérience vous invite à un voyage au-delà des limites de l'art traditionnel, où les couleurs se fondent dans une symphonie visuelle et où les émotions prennent forme sous la main habile de la peintre."},
-        "p7": { "class": "p7", "text": "Une expérience unique, interactive et inoubliable vous attend."},
-        "reserve": { "class": "reserve", "text": "Réserve !"},
-        "agence": { "class": "agence", "text": "Une exposition de Gallerie Past'elle"},
-        "titleconcept": { "class": "titleconcept", "text": "Le Concept"},
-
-        "tha": { "class": "tha", "text": "Accueil - Esprit Vigée"},
-        "tgg": { "class": "tgg", "text": "Gallerie - Esprit Vigée"},
-        "tcv": { "class": "tcv", "text": "Conditions générales de vente - Esprit Vigée"},
-        "tml": { "class": "tml", "text": "Mentions légales - Esprit Vigée"},
-        "tbe": { "class": "tbe", "text": "Billeterie - Esprit Vigée"},
-    
-        "l1": { "class": "l1", "text": "Accueil"},
-        "l2": { "class": "l2", "text": "Gallerie"},
-        "l3": { "class": "l3", "text": "Le concept"},
-        "l4": { "class": "l4", "text": "Billeterie"},
-        "l5": { "class": "l5", "text": "Contact"},
-
-        "l22": { "class": "l22", "text": "Gallerie"},
-        "l33": { "class": "l33", "text": "Le concept"},
-        "l44": { "class": "l44", "text": "Billeterie"},
-        "l55": { "class": "l55", "text": "Contact"},
-
-        "f1": { "class": "f1", "text": "Mentions légales"},
-        "f2": { "class": "f2", "text": "Conditions générales de vente"},
-        "f3": { "class": "f3", "text": "Gallerie"},
-        "f4": { "class": "f4", "text": "Le concept"},
-        "f5": { "class": "f5", "text": "Billeterie"},
-        "f6": { "class": "f6", "text": "Contact"},
-
-        "tp1": { "class": "tp1", "text": "Gratuité des billets"},
-        "tp2": { "class": "tp2", "text": "Réservation des billets"},
-        "tp3": { "class": "tp3", "text": "Conditions d'accès à l'exposition"},
-        "tp4": { "class": "tp4", "text": "Annulation de la visite"},
-        "tp5": { "class": "tp5", "text": "Responsabilité de l'organisateur"},
-        "tp6": { "class": "tp6", "text": "Modification des conditions générales de vente"},
-        "tp7": { "class": "tp7", "text": "Droit applicable et juridiction compétente"},
-
-        "ctt": { "class": "ctt", "text": "Une question à nous poser ? Par ici !"},
-        "tc": { "class": "tc", "text": "Pour toute question concernant notre exposition interactive, veuillez nous contacter à l’adresse mail suivante"},
-        "textCreateurs": { "class": "textCreateurs", "text": "Vous serez ainsi mis en relation avec notre équipe responsable de l’exposition."},
-        "r1": { "class": "r1", "text": "Développeuse full-stack, UI designer"},
-        "r2": { "class": "r2", "text": "Cheffe de projet, développeuse front-end"},
-        "r3": { "class": "r3", "text": "Graphiste, UX/UI designer"},
-        "r4": { "class": "r4", "text": "Graphiste, community manager"},
-        "r5": { "class": "r5", "text": "Monteur vidéos, sound-designer"},
-        "r6": { "class": "r6", "text": "Développeur 3D"},
-
-        "descrGallerie": { "class": "descrGallerie", "text": "Extrait des peintures présentées durant l’exposition interactive"},
-
-
-        "cp1": { "class": "cp1", "text": "Les billets pour l'exposition d'art sont gratuits. Ils ne peuvent donc être vendus. Cependant, ils peuvent être réservés en ligne ou obtenus sur place dans la limite des places disponibles."},
-        "cp2": { "class": "cp2", "text": "La réservation des billets peut être effectuée en ligne sur le site internet de l'exposition ou sur le site de l'organisateur de l'exposition. Les billets réservés en ligne sont disponibles à l'entrée de l'exposition. Les visiteurs doivent présenter leur billet imprimé ou sur leur smartphone."},
-        "cp3": { "class": "cp3", "text": "L'accès à l'exposition est soumis à la présentation d'un billet gratuit valable pour la date et l'heure de la visite. L'organisateur se réserve le droit de refuser l'accès à l'exposition à toute personne ne présentant pas de billet valide ou ne respectant pas les règles de sécurité ou de conduite en vigueur."},
-        "cp4": { "class": "cp4", "text": "L'organisateur se réserve le droit d'annuler ou de reporter la visite de l'exposition pour des raisons de sécurité ou en cas de force majeure. Dans ce cas, les visiteurs seront informés par email ou téléphone. L'organisateur ne pourra être tenu responsable des dommages éventuels causés par l'annulation ou le report de la visite."},
-        "cp5": { "class": "cp5", "text": "L'organisateur de l'exposition ne pourra être tenu responsable des dommages éventuels causés aux visiteurs ou à leurs biens lors de la visite de l'exposition. Les visiteurs doivent se conformer aux règles de sécurité et de conduite en vigueur dans l'exposition."},
-        "cp6": { "class": "cp6", "text": "Les présentes CGV peuvent être modifiées à tout moment par l'organisateur. Les nouvelles conditions générales de vente seront applicables à toutes les réservations effectuées après leur publication sur le site internet de l'exposition."},
-        "cp7": { "class": "cp7", "text": "Les présentes CGV sont soumises au droit français. Tout litige relatif à leur application ou à leur interprétation sera soumis aux tribunaux compétents de France. En réservant un billet pour l'exposition d'art gratuite, le visiteur reconnaît avoir pris connaissance et accepté les présentes conditions générales de vente."}
 
 
     }

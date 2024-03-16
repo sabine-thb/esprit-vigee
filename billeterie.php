@@ -66,7 +66,7 @@
             
     </header>
     <section class="billeterie">
-        <h1 class="title">Billeterie</h1>
+        <h1 class="title b1">Billeterie</h1>
 
         <div class="dropdown">
       <img class="lang-icon" src="./styles/images/langue2.png" alt="Image">
@@ -84,9 +84,9 @@
             <a href="#etape2" onclick="afficherEtape('etape2')" class="navLinkBilleterie">Nombre de billets</a>
             <a href="#etape3" onclick="afficherEtape('etape3')"class="navLinkBilleterie">Coordonnées</a> -->
 
-            <button class="navButton" onclick="afficherEtape('etape1')">Date de visite</button>
-            <button class="navButton" onclick="afficherEtape('etape2')">Nombre de billets</button>
-            <button class="navButton" onclick="afficherEtape('etape3')">Coordonnées</button>
+            <button class="navButton btnb1" onclick="afficherEtape('etape1')">Date de visite</button>
+            <button class="navButton btnb2" onclick="afficherEtape('etape2')">Nombre de billets</button>
+            <button class="navButton btnb3" onclick="afficherEtape('etape3')">Coordonnées</button>
         </div>
         <?php if (isset($_GET["resa"] )){  
             echo "<p class=\"reponse\">Votre réservation a bien été prise en compte. Un mail vous a été transmis.</p>";
@@ -108,11 +108,11 @@
                 <form action="traiteResa.php" method="POST">
                     <div class="etape" id="etape1">
                         <p>
-                            <label for="date">Choisissez une date :</label>
+                            <label for="date" class="datechoose">Choisissez une date :</label>
                             <input type="date" id="date" name="date">
                         </p>
                         <p>
-                            <label for="date">Choisissez un horaire :</label><br>
+                            <label for="date" class="timechoose">Choisissez un horaire :</label><br>
                             <div class="horaires">
                                 
                                 <input type="radio" id="radio1" name="horaire" value="10:00" >
@@ -140,7 +140,7 @@
                     
                     <div class="etape" id="etape2" style="display: none;">
                         <p>
-                            <label for="number">Nombre de billets uniques pour l'exposition :</label>
+                            <label for="number" class="numberbill">Nombre de billets uniques pour l'exposition :</label>
                         </p>
                         <p class="numberBillets">
                             <button class='decrement qteTotale' type='button'>-</button>
@@ -154,20 +154,20 @@
                     </div>
                     <div class="etape" id="etape3" style="display: none;">
                         <p>
-                            <label for="nom">Nom : </label>
+                            <label for="nom" class="namee">Nom : </label>
                             <input type="text" id="nom" name="nom" reqauired>
                         </p>
                         <p>
-                            <label for="prenom">Prénom :</label>
+                            <label for="prenom" class="firstname">Prénom :</label>
                             <input type="text" id="prenom" name="prenom" >
                         </p>
                         <p>
-                            <label for="mail">Adresse mail :</label>
+                            <label for="mail" class="mail">Adresse mail :</label>
                             <input type="mail" id="mail" name="mail" >
                         </p>
                         <p>
                             <input type="checkbox" id="conditions" name="conditions" required>
-                            <label for="conditions">J’accepte les conditions générales de ventes de l’exposition Esprit Vigée</label>
+                            <label for="conditions" class="conditions">J’accepte les conditions générales de ventes de l’exposition Esprit Vigée</label>
                         </p>
                         <p>
                             <input type="submit" value="valider" class="submit">
@@ -179,7 +179,7 @@
                     <img src="./styles/images/afficheExpo.png" class="affiche" alt="">
                     <div class= recapTxt>
                         <p class="titleBillet">Exposition Esprit Vigée</p>
-                        <p>Mode d'obtention : e-ticket, gratuit</p>
+                        <p class="obtention">Mode d'obtention : e-ticket, gratuit</p>
                         <p class="date" style="display: none;">Date : le <span id="dateChoisie"></span> à <span id="horaireChoisi"></span></p>
                         <p class="nbBillets" style="display: none;">Nombre de billets : <span id="nombreBillets"></span></p>
                     </div>
