@@ -1,191 +1,205 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Esprit Vigée</title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="./styles/all.css">
-    <link rel="stylesheet" href="./styles/menu.css">
-    <link rel="stylesheet" href="./styles/contact.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    
-<!-- petits points -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Esprit Vigée</title>
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./styles/all.css">
+  <link rel="stylesheet" href="./styles/menu.css">
+  <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+
+  <!-- petits points -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
-<body >
+
+<body>
   <div class="background halo-container"></div>
-    <header>
-        <div class="nav1">
-          <a href="index.html" class="logoContainer">
-            <img src="./styles/images/logo.png" class="logo" alt="logo de l'exposition">
-          </a>
-            <div class="mobile-nav-button">
-              <div class="mobile-nav-button__line"></div>
-              <div class="mobile-nav-button__line"></div>
-              <div class="mobile-nav-button__line"></div>
-            </div>
-          </div>
-            <nav class="mobile-menu">
-              <ul>
-                <li><a href="index.html" class="burgerLinks">Accueil</a></li>
-                <li><a href="gallerie.html" class="burgerLinks">Gallerie</a></li>
-                <li><a href="concept.html" class="burgerLinks">Le concept</a></li>
-                <li><a href="billeterie.php" class="burgerLinks">Billeterie</a></li>
-                <li><a href="contact.html" class="burgerLinks">Contact</a></li>									
-              </ul>
-            </nav>
-          
-          <div class="nav2">
-            <a href="gallerie.html"  class="navLink">Gallerie</a>
-            <a href="concept.html"  class="navLink">Le concept</a>
-            <a href="index.html">
-              <img src="./styles/images/logo.png" class="logo" alt="logo de l'exposition">
-            </a>
-            <a href="billeterie.php"  class="navLink">Billeterie</a>
-            <a href="contact.html"  class="navLink">Contact</a>
-    
-          </div>
-          <div class="scrollNav">
-            <div class="mobile-nav-button two">
-                <div class="mobile-nav-button__line"></div>
-                <div class="mobile-nav-button__line"></div>
-                <div class="mobile-nav-button__line"></div>
-              </div>
-            </div>
-    
-          </div>
-          
-        
-        <div class="headerText">
-            <h1 class="title">Contact</h1>
-            <p class="descrGallerie">Une question à nous poser ? Par ici !</p> 
-             
+  <header>
+    <div class="nav1">
+      <a href="index.html" class="logoContainer">
+        <img src="./styles/images/logo.png" class="logo" alt="logo de l'exposition">
+      </a>
+      <div class="mobile-nav-button">
+        <div class="mobile-nav-button__line"></div>
+        <div class="mobile-nav-button__line"></div>
+        <div class="mobile-nav-button__line"></div>
+      </div>
+    </div>
+    <nav class="mobile-menu">
+      <ul>
+        <li><a href="index.html" class="burgerLinks">Accueil</a></li>
+        <li><a href="gallerie.html" class="burgerLinks">Gallerie</a></li>
+        <li><a href="concept.html" class="burgerLinks">Le concept</a></li>
+        <li><a href="billeterie.php" class="burgerLinks">Billeterie</a></li>
+        <li><a href="contact.html" class="burgerLinks">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav2">
+      <a href="gallerie.html" class="navLink">Gallerie</a>
+      <a href="concept.html" class="navLink">Le concept</a>
+      <a href="index.html">
+        <img src="./styles/images/logo.png" class="logo" alt="logo de l'exposition">
+      </a>
+      <a href="billeterie.php" class="navLink">Billeterie</a>
+      <a href="contact.html" class="navLink">Contact</a>
+
+    </div>
+    <div class="scrollNav">
+      <div class="mobile-nav-button two">
+        <div class="mobile-nav-button__line"></div>
+        <div class="mobile-nav-button__line"></div>
+        <div class="mobile-nav-button__line"></div>
+      </div>
+    </div>
+
+    </div>
+
+
+    <div class="headerText">
+      <h1 class="title">Contact</h1>
+      <p class="descrGallerie">Une question à nous poser ? Par ici !</p>
+
+    </div>
+    <div class="dropdown">
+      <img class="lang-icon" src="./styles/images/langue2.png" alt="Image">
+      <button id="dropdownBtn" class="dropbtn">Langage <img class="fl-icon" src="./styles/images/flechefren.png"
+          alt="Image">
+      </button>
+      <div id="dropdownContent" class="dropdown-content">
+        <a href="" class="fr">Français</a>
+        <a href="" class="en">Anglais</a>
+      </div>
+    </div>
+    <div class="imagesTab">
+      <img src="./styles/images/tab1.png" class="imgTab one" alt="">
+      <img src="./styles/images/tab2.png" class="imgTab two" alt="">
+    </div>
+
+  </header>
+  <section>
+    <div class="flexContainer1">
+      <div class="flexContainer2">
+        <div class="imgVR"></div>
+        <div class="textContact">
+          <p>Pour toute question concernant notre exposition interactive, veuillez nous contacter à l’adresse mail
+            suivante : </p>
+          <p class="mail">contact@esprit-vigee.fr</p>
         </div>
-
-        <div class="imagesTab">
-            <img src="./styles/images/tab1.png" class="imgTab one" alt="">
-            <img src="./styles/images/tab2.png"class="imgTab two" alt="">
-        </div>  
-      
-        </header>
-        <section>
-          <div class="flexContainer1">
-            <div class="flexContainer2">
-              <div class="imgVR"></div>
-              <div class="textContact">
-                <p>Pour toute question concernant notre exposition interactive, veuillez nous contacter à l’adresse mail suivante : </p>
-                <p class="mail">contact@esprit-vigee.fr</p>
-              </div>
-            </div>
-            <div class="textCreateurs">Vous serez ainsi mis en relation avec notre équipe responsable de l’exposition.
-            </div>
-          </div>
-          <div class="equipeContainer">
-            <div class="equipe">
+      </div>
+      <div class="textCreateurs">Vous serez ainsi mis en relation avec notre équipe responsable de l’exposition.
+      </div>
+    </div>
+    <div class="equipeContainer">
+      <div class="equipe">
 
 
-              <div class="member right">  
-                <div class="memberText left">
-                  <p class="name">Sabine Thibout</p>
-                  <p class="role">Développeuse full-stack, UI designer</p>
-                </div>
-                <img src="./styles/images/profil.png" class="imgMember" alt="">
-              </div>
-              <div class="line"></div>
-              <div class="member left">
-                <img src="./styles/images/profil.png" class="imgMember" alt="">
-                <div class="memberText">
-                  <p class="name">Rihab Bouazzaoui</p>
-                  <p class="role">Cheffe de projet et développeuse front-end</p>
-                </div> 
-              </div>
-              <div class="line"></div>
-              <div class="member right">           
-                <div class="memberText left">
-                  <p class="name">Jade Célestine</p>
-                  <p class="role">Graphiste, UX/UI designer </p>
-                </div> 
-                <img src="./styles/images/profil.png" class="imgMember" alt=""> 
-              </div>
-              <div class="line"></div>
-              <div class="member left">
-                <img src="./styles/images/profil.png" class="imgMember" alt="">
-                <div class="memberText">
-                  <p class="name">Ahmed-Amine Sakkal</p>
-                  <p class="role">Community manager</p>
-                </div>
-                
-              </div>
-              <div class="line"></div>
-              <div class="member right">   
-                <div class="memberText left">
-                  <p class="name">Enzo Fortes</p>
-                  <p class="role">Monteur, sound -designer</p>
-                </div>  
-                <img src="./styles/images/profil.png" class="imgMember" alt="">
-              </div>
-              <div class="line"></div>
-              <div class="member left">
-                <img src="./styles/images/profil.png" class="imgMember" alt="">
-                <div class="memberText">
-                  <p class="name">Clément Mbarga Minsi</p>
-                  <p class="role">Développeur front-end</p>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-  
-  
-  
-  
-  
-          <footer>
-            <div class="logoContainer">
-              <img src="./styles/images/logo.png" class="logoFooter" alt="">
-              <div>
-                 <p class="titleExpo">Esprit Vigée</p>
-                 <p class="agence">Une exposition de Gallerie Past'elle</p>
-              </div>
-              
-            </div>
+        <div class="member right">
+          <div class="memberText left">
+            <p class="name">Sabine Thibout</p>
+            <p class="role">Développeuse full-stack, UI designer</p>
           </div>
-          
-          
-          <div class="pages">
-              <a href="ML.html" class="footerLink bold">Mentions légales</a>
-              <a href="conditionsVente.html" class="footerLink bold">Conditions générales de vente</a>
-              <a href="gallerie.html" class="footerLink">Gallerie</a>
-              <a href="concept.html" class="footerLink">Le concept</a>
-              <a href="billeterie.php" class="footerLink">Billeterie</a>
-              <a href="contact.html" class="footerLink">Contact</a>
+          <img src="./styles/images/profil.png" class="imgMember" alt="">
+        </div>
+        <div class="line"></div>
+        <div class="member left">
+          <img src="./styles/images/profil.png" class="imgMember" alt="">
+          <div class="memberText">
+            <p class="name">Rihab Bouazzaoui</p>
+            <p class="role">Cheffe de projet et développeuse front-end</p>
           </div>
-          <div class="reseaux">
-              <p class="bold contact">Contact</p>
-              <div class="linksReseau">
-                <a href="" class="linkReseau">
-                  <img src="./styles/images/facebook.png"  class="reseau" alt="lien vers facebook">
-                </a>
-                <a href="" class="linkReseau">
-                  <img src="./styles/images/pinterest.png" class="reseau"alt="lien vers pinterest">
-                </a>
-                <a href="" class="linkReseau">
-                  <img src="./styles/images/instagram.png" class="reseau" alt="lien vers instagram">
-                </a>
-    
-            </div>
-            
+        </div>
+        <div class="line"></div>
+        <div class="member right">
+          <div class="memberText left">
+            <p class="name">Jade Célestine</p>
+            <p class="role">Graphiste, UX/UI designer </p>
           </div>
-    
-      </footer>
-    
+          <img src="./styles/images/profil.png" class="imgMember" alt="">
+        </div>
+        <div class="line"></div>
+        <div class="member left">
+          <img src="./styles/images/profil.png" class="imgMember" alt="">
+          <div class="memberText">
+            <p class="name">Ahmed-Amine Sakkal</p>
+            <p class="role">Community manager</p>
+          </div>
 
-    <script src="./script/menu.js"></script>
-    <script src="./script/halo.js"></script>
-    
+        </div>
+        <div class="line"></div>
+        <div class="member right">
+          <div class="memberText left">
+            <p class="name">Enzo Fortes</p>
+            <p class="role">Monteur, sound -designer</p>
+          </div>
+          <img src="./styles/images/profil.png" class="imgMember" alt="">
+        </div>
+        <div class="line"></div>
+        <div class="member left">
+          <img src="./styles/images/profil.png" class="imgMember" alt="">
+          <div class="memberText">
+            <p class="name">Clément Mbarga Minsi</p>
+            <p class="role">Développeur front-end</p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+
+
+
+
+  <footer>
+    <div class="logoContainer">
+      <img src="./styles/images/logo.png" class="logoFooter" alt="">
+      <div>
+        <p class="titleExpo">Esprit Vigée</p>
+        <p class="agence">Une exposition de Gallerie Past'elle</p>
+      </div>
+
+    </div>
+    </div>
+
+
+    <div class="pages">
+      <a href="ML.html" class="footerLink bold">Mentions légales</a>
+      <a href="conditionsVente.html" class="footerLink bold">Conditions générales de vente</a>
+      <a href="gallerie.html" class="footerLink">Gallerie</a>
+      <a href="concept.html" class="footerLink">Le concept</a>
+      <a href="billeterie.php" class="footerLink">Billeterie</a>
+      <a href="contact.html" class="footerLink">Contact</a>
+    </div>
+    <div class="reseaux">
+      <p class="bold contact">Contact</p>
+      <div class="linksReseau">
+        <a href="" class="linkReseau">
+          <img src="./styles/images/facebook.png" class="reseau" alt="lien vers facebook">
+        </a>
+        <a href="" class="linkReseau">
+          <img src="./styles/images/pinterest.png" class="reseau" alt="lien vers pinterest">
+        </a>
+        <a href="" class="linkReseau">
+          <img src="./styles/images/instagram.png" class="reseau" alt="lien vers instagram">
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="./script/menu.js"></script>
+  <script src="./script/halo.js"></script>
+  <script src="./script/deroule.js"></script>
+
 </body>
+
 </html>
