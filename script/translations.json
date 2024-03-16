@@ -17,6 +17,12 @@
         "agence": { "class": "agence", "text": "An exhibition by Gallerie Past'elle"},
         "titleconcept": { "class": "titleconcept", "text": "The Concept"},
 
+        "tha": { "class": "tha", "text": "Home - Esprit Vigée"},
+        "tgg": { "class": "tgg", "text": "Gallery - Esprit Vigée"},
+        "tcv": { "class": "tcv", "text": "Terms and conditions - Esprit Vigée"},
+        "tml": { "class": "tml", "text": "Legal notice - Esprit Vigée"},
+        "tbe": { "class": "tbe", "text": "Tickets - Esprit Vigée"},
+
         "l1": { "class": "l1", "text": "Home"},
         "l2": { "class": "l2", "text": "Gallery"},
         "l3": { "class": "l3", "text": "The concept"},
@@ -53,7 +59,10 @@
         "r5": { "class": "r5", "text": "Video editor, sound-designer"},
         "r6": { "class": "r6", "text": "3D developer"},
 
+        "descrGallerie": { "class": "descrGallerie", "text": "Excerpt from the paintings presented during the interactive exhibition"},
 
+
+        
 
 
         "cp1": { "class": "cp1", "text": " Tickets for the art exhibition are free. They cannot be sold. However, they can be reserved online or obtained on site, subject to availability."},
@@ -84,8 +93,13 @@
         "p7": { "class": "p7", "text": "Une expérience unique, interactive et inoubliable vous attend."},
         "reserve": { "class": "reserve", "text": "Réserve !"},
         "agence": { "class": "agence", "text": "Une exposition de Gallerie Past'elle"},
-
         "titleconcept": { "class": "titleconcept", "text": "Le Concept"},
+
+        "tha": { "class": "tha", "text": "Accueil - Esprit Vigée"},
+        "tgg": { "class": "tgg", "text": "Gallerie - Esprit Vigée"},
+        "tcv": { "class": "tcv", "text": "Conditions générales de vente - Esprit Vigée"},
+        "tml": { "class": "tml", "text": "Mentions légales - Esprit Vigée"},
+        "tbe": { "class": "tbe", "text": "Billeterie - Esprit Vigée"},
     
         "l1": { "class": "l1", "text": "Accueil"},
         "l2": { "class": "l2", "text": "Gallerie"},
@@ -112,7 +126,6 @@
         "tp5": { "class": "tp5", "text": "Responsabilité de l'organisateur"},
         "tp6": { "class": "tp6", "text": "Modification des conditions générales de vente"},
         "tp7": { "class": "tp7", "text": "Droit applicable et juridiction compétente"},
-        
 
         "ctt": { "class": "ctt", "text": "Une question à nous poser ? Par ici !"},
         "tc": { "class": "tc", "text": "Pour toute question concernant notre exposition interactive, veuillez nous contacter à l’adresse mail suivante"},
@@ -123,6 +136,8 @@
         "r4": { "class": "r4", "text": "Graphiste, community manager"},
         "r5": { "class": "r5", "text": "Monteur vidéos, sound-designer"},
         "r6": { "class": "r6", "text": "Développeur 3D"},
+
+        "descrGallerie": { "class": "descrGallerie", "text": "Extrait des peintures présentées durant l’exposition interactive"},
 
 
         "cp1": { "class": "cp1", "text": "Les billets pour l'exposition d'art sont gratuits. Ils ne peuvent donc être vendus. Cependant, ils peuvent être réservés en ligne ou obtenus sur place dans la limite des places disponibles."},

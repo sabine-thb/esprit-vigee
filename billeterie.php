@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Billeterie - Esprit Vigée</title>
+    <title class="tbe">Billeterie - Esprit Vigée</title>
 
     <link rel="stylesheet" href="./styles/all.css">
     <link rel="stylesheet" href="./styles/menu.css">
