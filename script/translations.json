@@ -15,7 +15,35 @@
         "p7": { "class": "p7", "text": "A unique, interactive and unforgettable experience awaits you."},
         "reserve": { "class": "reserve", "text": "Reserve !"},
         "agence": { "class": "agence", "text": "An exhibition by Gallerie Past'elle"},
-        "titleconcept": { "class": "titleconcept", "text": "Concept"}
+        "titleconcept": { "class": "titleconcept", "text": "The Concept"},
+
+        "l1": { "class": "l1", "text": "Home"},
+        "l2": { "class": "l2", "text": "Gallery"},
+        "l3": { "class": "l3", "text": "The concept"},
+        "l4": { "class": "l4", "text": "Tickets"},
+        "l5": { "class": "l5", "text": "Contact"},
+
+        "l22": { "class": "l22", "text": "Gallery"},
+        "l33": { "class": "l33", "text": "The concept"},
+        "l44": { "class": "l44", "text": "Tickets"},
+        "l55": { "class": "l55", "text": "Contact"},
+
+        "f1": { "class": "f1", "text": "Legal notice"},
+        "f2": { "class": "f2", "text": "Terms and conditions"},
+        "f3": { "class": "f3", "text": "Gallery"},
+        "f4": { "class": "f4", "text": "The concept"},
+        "f5": { "class": "f5", "text": "Tickets"},
+        "f6": { "class": "f6", "text": "Contact"}
+
+
+
+
+
+
+
+
+
+
 
 
       
@@ -30,15 +58,32 @@
         ".titleSection2": {"class": "titleSection2","text":"Gallerie"},
         ".linkGallerie.one": {"class": "linkGallerie.one","text":"Voir plus"},
         ".linkGallerie.two": {"class": "linkGallerie.two","text":"Voir plus"},
-
         ".immersionTitle": {"class": "immersionTitle","text":"Une immersion complète"},
         "p5": { "class": "p5", "text": "Plongez dans l'univers de la peintre et découvrez ses oeuvres comme vous ne les avez jamais vues."},
         "p6": { "class": "p6", "text": "Cette expérience vous invite à un voyage au-delà des limites de l'art traditionnel, où les couleurs se fondent dans une symphonie visuelle et où les émotions prennent forme sous la main habile de la peintre."},
         "p7": { "class": "p7", "text": "Une expérience unique, interactive et inoubliable vous attend."},
         "reserve": { "class": "reserve", "text": "Réserve !"},
         "agence": { "class": "agence", "text": "Une exposition de Gallerie Past'elle"},
-        "titleconcept": { "class": "titleconcept", "text": "Le Concept"}
 
+        "titleconcept": { "class": "titleconcept", "text": "Le Concept"},
+    
+        "l1": { "class": "l1", "text": "Accueil"},
+        "l2": { "class": "l2", "text": "Gallerie"},
+        "l3": { "class": "l3", "text": "Le concept"},
+        "l4": { "class": "l4", "text": "Billeterie"},
+        "l5": { "class": "l5", "text": "Contact"},
+
+        "l22": { "class": "l22", "text": "Gallerie"},
+        "l33": { "class": "l33", "text": "Le concept"},
+        "l44": { "class": "l44", "text": "Billeterie"},
+        "l55": { "class": "l55", "text": "Contact"},
+
+        "f1": { "class": "f1", "text": "Mentions légales"},
+        "f2": { "class": "f2", "text": "Conditions générales de vente"},
+        "f3": { "class": "f3", "text": "Gallerie"},
+        "f4": { "class": "f4", "text": "Le concept"},
+        "f5": { "class": "f5", "text": "Billeterie"},
+        "f6": { "class": "f6", "text": "Contact"}
        
    
         

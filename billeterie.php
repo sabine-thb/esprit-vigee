@@ -199,11 +199,12 @@
             </div>
 
             <div class="pages">
-                <a href="ML.html" class="footerLink bold">Mentions légales</a>
-                <a href="gallerie.html" class="footerLink">Gallerie</a>
-                <a href="concept.html" class="footerLink">Le concept</a>
-                <a href="billeterie.php" class="footerLink">Billeterie</a>
-                <a href="contact.html" class="footerLink">Contact</a>
+                <a href="ML.html" class="footerLink bold f1">Mentions légales</a>
+                <a href="conditionsVente.html" class="footerLink bold f2">Conditions générales de vente</a>
+                <a href="gallerie.html" class="footerLink f3">Gallerie</a>
+                <a href="concept.html" class="footerLink f4">Le concept</a>
+                <a href="billeterie.php" class="footerLink f5">Billeterie</a>
+                <a href="contact.html" class="footerLink f6">Contact</a>
             </div>
             <div class="reseaux">
                 <p class="bold contact">Contact</p>
