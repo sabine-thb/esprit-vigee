@@ -167,7 +167,7 @@
                         </p>
                         <p>
                             <input type="checkbox" id="conditions" name="conditions" required>
-                            <label for="conditions" class="conditions">J’accepte les conditions générales de ventes de l’exposition Esprit Vigée</label>
+                            <label for="conditions" class="conditionss">J’accepte les conditions générales de ventes de l’exposition Esprit Vigée</label>
                         </p>
                         <p>
                             <input type="submit" value="valider" class="submit">
