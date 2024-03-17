@@ -49,8 +49,8 @@
         "tp6": { "class": "tp6", "text": "Modification of the general terms and conditions of sale"},
         "tp7": { "class": "tp7", "text": "Applicable law and jurisdiction"},
 
-        "ctt": { "class": "ctt", "text": "A question to ask us ? It's over here !"},
-        "tc": { "class": "tc", "text": "If you have any questions about our interactive exhibition, please contact us at the following e-mail address"},
+        "descrContact": { "class": "descrContact", "text": "A question to ask us ? It's over here !"},
+        "tc": { "class": "tc", "text": "If you have any questions about our interactive exhibition, please contact us at the following e-mail address :"},
         "textCreateurs": { "class": "textCreateurs", "text": "You will then be put in contact with our exhibition team."},
         "r1": { "class": "r1", "text": "Full-stack developer, UI designer"},
         "r2": { "class": "r2", "text": "Project leader and front-end developer"},
