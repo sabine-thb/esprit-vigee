@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             }
 
-            //  mettr a jour le contnu de la page en fct de la langue actuelle
+            //  mettre a jour le contenu de la page en fct de la langue actuelle
             function updatePage() {
                 var translations = data[currentLang];
                 for (var key in translations) {
@@ -31,10 +31,13 @@ document.addEventListener("DOMContentLoaded", function() {
                         element = document.getElementById(translation.id);
                     }
                     if (element) {
-                        element.textContent = translation.text;
+                        // Remplacez les sauts de ligne par des balises <br>
+                        translation.text = translation.text.replace(/\\n/g, '<br>');
+                        element.innerHTML = translation.text; // Utilise innerHTML pour interpréter les balises HTML
                     }
                 }
             }
+            
             var savedLang = localStorage.getItem("lang");
             if (savedLang) {
                 // utlise la langue enregistree pr afficher le contenu de la page
