@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/menu.css">
     <link rel="stylesheet" href="./styles/billeterie.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="icon" href="./styles/images/logowhitos.png">
+    <link rel="icon" href="./styles/images/favicon.ico">
 
 
     <script src="./script/billeterie.js"></script>
