@@ -3,7 +3,7 @@
         "descrExpo": { "class": "descrExpo", "text": "An interactive exhibition about an invisible artist" },
         "titleSection": { "class": "titleSection", "text": "The Artist" },
         "p1": { "class": "p1", "text": "Élisabeth Vigée Le Brun, Marie-Antoinette's official portraitist, is a little-known painter. Yet her life and career deserve special attention." },
-        "p2": { "class": "p2", "text": "Yes, this revolutionary of brushes metamorphosed the art of portraiture, immortalizing faces imbued with life and joy. At the time, to show one's teeth and mouth was to show one's emotions. It wasn't done. \\n Generally, open mouths were used to represent the hunger of the poor, the folly of lost hopes, or the innocence of children." },
+        "p2": { "class": "p2", "text": "Yes, this revolutionary of brushes metamorphosed the art of portraiture, immortalizing faces imbued with life and joy. At the time, to show one's teeth and mouth was to show one's emotions. It wasn't done. <br> Generally, open mouths were used to represent the hunger of the poor, the folly of lost hopes, or the innocence of children." },
         "p3": { "class": "p3", "text": "It was Elisabeth who introduced the era of the smile into portrait painting. Born into a prodigious family, she sparkled from an early age, propelled by an exceptional talent."},
         "p4": { "class": "p4", "text": "Élisabeth Vigée Le Brun, a visionary who transcended the conventions of her time, leaving an indelible mark on the history of art." },
         ".titleSection2": {"class": "titleSection2","text":"Gallery"},
@@ -15,7 +15,16 @@
         "p7": { "class": "p7", "text": "A unique, interactive and unforgettable experience awaits you."},
         "reserve": { "class": "reserve", "text": "Reserve !"},
         "agence": { "class": "agence", "text": "An exhibition by Gallerie Past'elle"},
-        "titleconcept": { "class": "titleconcept", "text": "The Concept"},
+        "titleconcept": { "class": "titleconcept", "text": "The <br>Concept"},
+
+        "fr1": { "class": "fr1", "text": "French"},
+        "en2": { "class": "en2", "text": "English"},
+
+        "ml1": { "class": "ml1", "text": "Legal <br> notice"},
+        "fr1": { "class": "fr1", "text": "Français"},
+        "par1": { "class": "par1", "text": "Editors"},
+
+
 
         "tha": { "class": "tha", "text": "Home - Esprit Vigée"},
         "tgg": { "class": "tgg", "text": "Gallery - Esprit Vigée"},
@@ -79,6 +88,9 @@
 
         "numberbill": { "class": "numberbill", "text": "Number of single tickets for the exhibition :"},
 
+        "cond": { "class": "cond", "text": "Terms and <br>conditions"},
+
+
         "cp1": { "class": "cp1", "text": " Tickets for the art exhibition are free. They cannot be sold. However, they can be reserved online or obtained on site, subject to availability."},
         "cp2": { "class": "cp2", "text": "Tickets can be booked online via the exhibition website or the website of the exhibition organizer. Tickets booked online are available at the exhibition entrance. Visitors must present their printed ticket or on their smartphone."},
         "cp3": { "class": "cp3", "text": "Access to the exhibition is subject to presentation of a free ticket valid for the date and time of the visit. The organizer reserves the right to refuse access to the exhibition to anyone who does not present a valid ticket, or who does not respect the rules of safety or conduct in force."},
@@ -94,9 +106,9 @@
     "fr": {
         "descrExpo": { "class": "descrExpo", "text": "Une exposition interactive sur une peintre invisible." },
         "titleSection": { "class": "titleSection", "text": "L'artiste" },
-        "p1": { "class": "p1", "text": "Élisabeth Vigée Le Brun, portraitiste officielle de Marie-Antoinette, est une peintre méconnue du grand public. Pourtant, son parcours et sa vie mériteraient une attention particulière." },
-        "p2": { "class": "p2", "text": "Cette révolutionnaire des pinceaux est à l'origine de l'introduction des sourires dans les portraits peints. À l'époque, montrer ses dents et sa bouche était synonyme d'exprimer des émotions. Ce n'était pas fait. Généralement, les bouches ouvertes étaient utilisées pour représenter la faim des pauvres, la folie des espoirs perdus ou l'innocence des enfants." },
-        "p3": { "class": "p3", "text": "Issue d’une famille prodigieuse, elle a étincelé dès son plus jeune âge, propulsée par un talent exceptionnel. Sa jeunesse éclatante et son génie artistique ont fait d'elle, à seulement 20 ans, la portraitiste la plus en vogue de France, lui ouvrant les portes de la cour." },
+        "p1": { "class": "p1", "text": "Élisabeth Vigée Le Brun, portraitiste officielle de Marie-Antoinette, est une peintre méconnue du grand public.<br> Pourtant, son parcours et sa vie mériteraient une attention particulière." },
+        "p2": { "class": "p2", "text": "Cette révolutionnaire des pinceaux est à l'origine de l'introduction des sourires dans les portraits peints.<br>À l'époque, montrer ses dents et sa bouche était synonyme d'exprimer des émotions. Cela ne se fait.<br>Généralement, les bouches ouvertes étaient utilisées pour représenter la faim des pauvres, la folie des espoirs perdus ou l'innocence des enfants." },
+        "p3": { "class": "p3", "text": "Issue d’une famille prodigieuse, elle a étincelé dès son plus jeune âge, propulsée par un talent exceptionnel.<br>Sa jeunesse éclatante et son génie artistique ont fait d'elle, à seulement 20 ans, la portraitiste la plus en vogue de France, lui ouvrant les portes de la cour." },
         "p4": { "class": "p4", "text": "Élisabeth Vigée Le Brun, une visionnaire qui a transcendé les conventions de son époque, laisse une empreinte indélébile dans l'histoire de l'art." },
         ".titleSection2": {"class": "titleSection2","text":"Gallerie"},
         ".linkGallerie.one": {"class": "linkGallerie.one","text":"Voir plus"},
@@ -107,7 +119,16 @@
         "p7": { "class": "p7", "text": "Une expérience unique, interactive et inoubliable vous attend."},
         "reserve": { "class": "reserve", "text": "Réserve !"},
         "agence": { "class": "agence", "text": "Une exposition de Gallerie Past'elle"},
-        "titleconcept": { "class": "titleconcept", "text": "Le Concept"},
+        "titleconcept": { "class": "titleconcept", "text": "Le<br>Concept"},
+
+        "fr1": { "class": "fr1", "text": "Français"},
+        "en2": { "class": "en2", "text": "Anglais"},
+        "ml1": { "class": "ml1", "text": "Mentions <br> légales"},
+        "par1": { "class": "par1", "text": "Éditeurs"},
+
+
+
+
 
         "tha": { "class": "tha", "text": "Accueil - Esprit Vigée"},
         "tgg": { "class": "tgg", "text": "Gallerie - Esprit Vigée"},
@@ -141,7 +162,8 @@
         "tp6": { "class": "tp6", "text": "Modification des conditions générales de vente"},
         "tp7": { "class": "tp7", "text": "Droit applicable et juridiction compétente"},
 
-        "ctt": { "class": "ctt", "text": "Une question à nous poser ? Par ici !"},
+        "descrContact": { "class": "descrContact", "text": "Une question à nous poser ? Par ici !"},
+
         "tc": { "class": "tc", "text": "Pour toute question concernant notre exposition interactive, veuillez nous contacter à l’adresse mail suivante"},
         "textCreateurs": { "class": "textCreateurs", "text": "Vous serez ainsi mis en relation avec notre équipe responsable de l’exposition."},
         "r1": { "class": "r1", "text": "Développeuse full-stack, UI designer"},
@@ -149,7 +171,7 @@
         "r3": { "class": "r3", "text": "Graphiste, UX/UI designer"},
         "r4": { "class": "r4", "text": "Graphiste, community manager"},
         "r5": { "class": "r5", "text": "Monteur vidéos, sound-designer"},
-        "r6": { "class": "r6", "text": "Développeur 3D"},
+        "r6": { "class": "r6", "text": "Développeur & maquettiste 3D"},
 
         "descrGallerie": { "class": "descrGallerie", "text": "Extrait des peintures présentées durant l’exposition interactive"},
 
@@ -160,10 +182,19 @@
         "datechoose": { "class": "datechoose", "text": "Choisissez une date :"},
         "timechoose": { "class": "timechoose", "text": "Choisissez un horaire :"},
 
+        "valid": { "class": "valid", "text": "Valider"},
+        
+        "valid.two": { "class": "valid.two", "text": "Valider"},
+        "titleBillet": { "class": "titleBillet", "text": "Exposition Esprit Vigée"},
+        "obtention": { "class": "obtention", "text": "Mode d'obtention: ticket, gratuit"},
+        "conditions": { "class": "conditionss", "text": "J’accepte les conditions générales de ventes de l’exposition Esprit Vigée"},
+        "namee": { "class": "namee", "text": "Nom :"},
+        "firstname": { "class": "firstname", "text": "Prénom :"},
+        "mail": { "class": "mail", "text": "Adresse mail :"},
 
+        "numberbill": { "class": "numberbill", "text": "Nombre de billets uniques pour l'exposition :"},
 
-
-
+        "cond": { "class": "cond", "text": "Conditions<br> de vente"},
 
         "cp1": { "class": "cp1", "text": "Les billets pour l'exposition d'art sont gratuits. Ils ne peuvent donc être vendus. Cependant, ils peuvent être réservés en ligne ou obtenus sur place dans la limite des places disponibles."},
         "cp2": { "class": "cp2", "text": "La réservation des billets peut être effectuée en ligne sur le site internet de l'exposition ou sur le site de l'organisateur de l'exposition. Les billets réservés en ligne sont disponibles à l'entrée de l'exposition. Les visiteurs doivent présenter leur billet imprimé ou sur leur smartphone."},
