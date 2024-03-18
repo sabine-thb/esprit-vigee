@@ -70,7 +70,7 @@
 
         <div class="dropdown">
       <img class="lang-icon" src="./styles/images/langue2.png" alt="Image">
-      <button id="dropdownBtn" class="dropbtn">Langage <img class="fl-icon" src="./styles/images/flechefren.png"
+      <button id="dropdownBtn" class="dropbtn dpbtt">Langage <img class="fl-icon" src="./styles/images/flechefren.png"
           alt="Image">
       </button>
       <div id="dropdownContent" class="dropdown-content">
@@ -89,18 +89,18 @@
             <button class="navButton btnb3" onclick="afficherEtape('etape3')">Coordonnées</button>
         </div>
         <?php if (isset($_GET["resa"] )){  
-            echo "<p class=\"reponse\">Votre réservation a bien été prise en compte. Un mail vous a été transmis.</p>";
+            echo "<p class=\"reponse repor\">Votre réservation a bien été prise en compte. Un mail vous a été transmis.</p>";
         } 
 
         if (isset($_GET["err"]) && $_GET["err"] === "date"){  
-            echo "<p class=\"reponse\">La date de visite que vous avez sélectionnée est déjà passée.</p>";         
+            echo "<p class=\"reponse rep0\">La date de visite que vous avez sélectionnée est déjà passée.</p>";         
         }
 
         if (isset($_GET["err"]) && $_GET["err"] === "mail"){  
-            echo "<p class=\"reponse\">Le mail que vous avez saisi est invalide.</p>";         
+            echo "<p class=\"reponse rep1\">Le mail que vous avez saisi est invalide.</p>";         
         }
         if (isset($_GET["err"]) && $_GET["err"] === "empty"){  
-            echo "<p class=\"reponse\">Veuillez remplir tous les champs.</p>";         
+            echo "<p class=\"reponse rep2\">Veuillez remplir tous les champs.</p>";         
         }
 
         ?> 
