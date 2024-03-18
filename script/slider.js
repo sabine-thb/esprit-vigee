@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var arrowLeft = document.querySelector('.arrow.left');
   
       // Vérifier si la hauteur de l'en-tête est inférieure à 725px
-      if (monHeader.clientHeight < 725) {
+      if (monHeader.clientHeight < 725 && monHeader.innerWidth > 750) {
           title.style.fontSize = '5rem';
           arrowRight.style.bottom = '20px';
           arrowLeft.style.bottom = '20px';
