@@ -1,12 +1,12 @@
 var dropdownBtn = document.getElementById("dropdownBtn");
 var dropdownContent = document.getElementById("dropdownContent");
 
-dropdownBtn.addEventListener("click", function() {
-  dropdownContent.classList.toggle("show");
+dropdownBtn.addEventListener("click", function () {
+    dropdownContent.classList.toggle("show");
 });
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var currentLang = "fr"; // par défaut=fr
-    
+
     // recup le fichier JSON 
     fetch('./script/translations.json')
         .then(response => response.json())
@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 currentLang = lang;
                 updatePage(); // mise à jour du cntenu de la page après avoir changé la lg
                 localStorage.setItem("lang", lang);
-                 
-    var submitBtn = document.querySelector('.submit');
-    if (lang === 'en') {
-        submitBtn.value = "Confirm";
-    } else if (lang === 'fr') {
-        submitBtn.value = "Valider";
-    }
+
+                var submitBtn = document.querySelector('.submit');
+                if (lang === 'en') {
+                    submitBtn.value = "Confirm";
+                } else if (lang === 'fr') {
+                    submitBtn.value = "Valider";
+                }
 
             }
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
             }
-            
+
             var savedLang = localStorage.getItem("lang");
             if (savedLang) {
                 // utlise la langue enregistree pr afficher le contenu de la page
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             //  event pr le clic sur le bouton de langue
-            document.getElementById("dropdownContent").addEventListener("click", function(event) {
+            document.getElementById("dropdownContent").addEventListener("click", function (event) {
                 if (event.target.classList.contains("en")) {
                     changeLanguage("en"); // chgmnt la langue en anglais
                 } else if (event.target.classList.contains("fr")) {

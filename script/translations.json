@@ -260,6 +260,46 @@
             "class": "r6",
             "text": "3D developer"
         },
+        "radio1": {
+            "class": "radio1",
+            "text": "10 AM"
+        },
+        "radio2": {
+            "class": "radio2",
+            "text": "11 AM"
+        },
+        "radio3": {
+            "class": "radio3",
+            "text": "12 AM"
+        },
+        "radio4": {
+            "class": "radio4",
+            "text": "1 PM"
+        },
+        "radio5": {
+            "class": "radio5",
+            "text": "2 PM"
+        },
+        "radio6": {
+            "class": "radio6",
+            "text": "3 PM"
+        },
+        "radio7": {
+            "class": "radio7",
+            "text": "4 PM"
+        },
+        "radio8": {
+            "class": "radio8",
+            "text": "5 PM"
+        },
+        "radio9": {
+            "class": "radio9",
+            "text": "6 PM"
+        },
+
+
+
+
         "descrGallerie": {
             "class": "descrGallerie",
             "text": "Excerpt from the paintings presented during the interactive exhibition"
@@ -342,15 +382,15 @@
         },
         "namee": {
             "class": "namee",
-            "text": "Last name"
+            "text": "Last name :"
         },
         "firstname": {
             "class": "firstname",
-            "text": "First name"
+            "text": "First name :"
         },
         "mail": {
             "class": "mail",
-            "text": "Mail address"
+            "text": "Mail address :"
         },
         "numberbill": {
             "class": "numberbill",
@@ -362,7 +402,7 @@
         },
         "cp1": {
             "class": "cp1",
-            "text": " Tickets for the art exhibition are free. They cannot be sold. However, they can be reserved online or obtained on site, subject to availability."
+            "text": "Tickets for the art exhibition are free. They cannot be sold. However, they can be reserved online or obtained on site, subject to availability."
         },
         "cp2": {
             "class": "cp2",
@@ -654,6 +694,44 @@
             "class": "r6",
             "text": "Développeur & maquettiste 3D"
         },
+        "radio1": {
+            "class": "radio1",
+            "text": "10:00"
+        },
+        "radio2": {
+            "class": "radio2",
+            "text": "11:00"
+        },
+        "radio3": {
+            "class": "radio3",
+            "text": "12:00"
+        },
+        "radio4": {
+            "class": "radio4",
+            "text": "13:00"
+        },
+        "radio5": {
+            "class": "radio5",
+            "text": "14:00"
+        },
+        "radio6": {
+            "class": "radio6",
+            "text": "10:00"
+        },
+        "radio7": {
+            "class": "radio7",
+            "text": "16:00"
+        },
+        "radio8": {
+            "class": "radio8",
+            "text": "17:00"
+        },
+        "radio9": {
+            "class": "radio9",
+            "text": "18:00"
+        },
+
+
         "descrGallerie": {
             "class": "descrGallerie",
             "text": "Extrait des peintures présentées durant l’exposition interactive"

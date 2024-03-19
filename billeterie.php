@@ -116,23 +116,23 @@
                             <div class="horaires">
                                 
                                 <input type="radio" id="radio1" name="horaire" value="10:00" >
-                                <label for="radio1">10:00</label>
+                                <label for="radio1" class="radio1">10:00</label>
                                 <input type="radio" id="radio2" name="horaire" value="11:00" >
-                                <label for="radio2">11:00</label>
+                                <label for="radio2" class="radio2">11:00</label>
                                 <input type="radio" id="radio3" name="horaire" value="12:00" >
-                                <label for="radio3">12:00</label>
+                                <label for="radio3" class="radio3">12:00</label>
                                 <input type="radio" id="radio4" name="horaire" value="13:00">
-                                <label for="radio4">13:00</label>
-                                <input type="radio" id="radio5" name="horaire" value="14:00" ">
-                                <label for="radio5">14:00</label>
+                                <label for="radio4" class="radio4">13:00</label>
+                                <input type="radio" id="radio5" name="horaire" value="14:00">
+                                <label for="radio5" class="radio5">14:00</label>
                                 <input type="radio" id="radio6" name="horaire" value="15:00">
-                                <label for="radio6">15:00</label>
+                                <label for="radio6" class="radio6">15:00</label>
                                 <input type="radio" id="radio7" name="horaire" value="16:00" >
-                                <label for="radio7">16:00</label>
+                                <label for="radio7" class="radio7">16:00</label>
                                 <input type="radio" id="radio8" name="horaire" value="17:00" >
-                                <label for="radio8">17:00</label>
+                                <label for="radio8" class="radio8">17:00</label>
                                 <input type="radio" id="radio9" name="horaire" value="18:00" >
-                                <label for="radio9">18:00</label>
+                                <label for="radio9" class="radio9">18:00</label>
                             </div>
                         </p>
                         <button type="button" class="valid one" onclick="passerEtape('etape1', 'etape2')">Valider</button>
