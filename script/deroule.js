@@ -7,6 +7,7 @@ dropdownBtn.addEventListener("click", function () {
 document.addEventListener("DOMContentLoaded", function () {
     var currentLang = "fr"; // par défaut=fr
 
+
     // recup le fichier JSON 
     fetch('./script/translations.json')
         .then(response => response.json())
@@ -16,13 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 currentLang = lang;
                 updatePage(); // mise à jour du cntenu de la page après avoir changé la lg
                 localStorage.setItem("lang", lang);
-
                 var submitBtn = document.querySelector('.submit');
                 if (lang === 'en') {
                     submitBtn.value = "Confirm";
                 } else if (lang === 'fr') {
                     submitBtn.value = "Valider";
                 }
+                updateHourValues(lang);
+
 
             }
 
@@ -38,10 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
                         element = document.getElementById(translation.id);
                     }
                     if (element) {
-                        // Remplacez les sauts de ligne par des balises <br>
+                        // Remplace les sauts de ligne par des balises <br>
                         translation.text = translation.text.replace(/\\n/g, '<br>');
                         element.innerHTML = translation.text; // Utilise innerHTML pour interpréter les balises HTML
                     }
+
                 }
             }
 
@@ -64,4 +67,43 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         })
         .catch(error => console.error('Erreur lors du chargement du fichier JSON :', error));
+
+        function updateHourValues(lang) {
+            var heures = document.querySelectorAll('input[name="horaire"]');
+            heures.forEach(function(heure) {
+                switch (heure.value) {
+                    case '10:00':
+                        heure.value = lang === 'en' ? '10:00' : '10:00';
+                        break;
+                    case '11:00':
+                        heure.value = lang === 'en' ? '11:00' : '11:00';
+                        break;
+                    case '12:00':
+                        heure.value = lang === 'en' ? '12:00' : '12:00';
+                        break;
+                    case '13:00':
+                        heure.value = lang === 'en' ? '1:00 PM' : '13:00';
+                        break;
+                    case '14:00':
+                        heure.value = lang === 'en' ? '2:00 PM' : '14:00';
+                        break;
+                    case '15:00':
+                        heure.value = lang === 'en' ? '3:00 PM' : '15:00';
+                        break;
+                    case '16:00':
+                        heure.value = lang === 'en' ? '4:00 PM' : '16:00';
+                        break;
+                    case '17:00':
+                        heure.value = lang === 'en' ? '5:00 PM' : '17:00';
+                        break;
+                    case '18:00':
+                        heure.value = lang === 'en' ? '6:00 PM' : '18:00';
+                        break;
+                    default:
+                        break;
+                }
+            });
+        }
+
+    
 });
