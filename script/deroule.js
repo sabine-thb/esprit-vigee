@@ -16,6 +16,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 currentLang = lang;
                 updatePage(); // mise à jour du cntenu de la page après avoir changé la lg
                 localStorage.setItem("lang", lang);
+                 
+    var submitBtn = document.querySelector('.submit');
+    if (lang === 'en') {
+        submitBtn.value = "Confirm";
+    } else if (lang === 'fr') {
+        submitBtn.value = "Valider";
+    }
 
             }
 

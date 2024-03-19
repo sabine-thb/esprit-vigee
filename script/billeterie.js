@@ -43,6 +43,7 @@ function passerEtape(etapeActuelle, etapeSuivante) {
         document.getElementById('nombreBillets').textContent = donnees['tickets'];
         document.querySelector('.nbBillets').style.display = 'block'; // Afficher l'élément avec la classe .nbBillets
     }
+
 }
 
 function afficherEtape(etapeEnCours) {
