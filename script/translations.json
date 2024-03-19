@@ -72,6 +72,10 @@
             "class": "en2",
             "text": "English"
         },
+        "lang":{
+            "class": "lang",
+            "text": "Language"
+        },
         "ml1": {
             "class": "ml1",
             "text": "Legal <br> notice"
@@ -442,6 +446,10 @@
         "en2": {
             "class": "en2",
             "text": "Anglais"
+        },
+        "lang":{
+            "class": "lang",
+            "text": "Langage"
         },
         "ml1": {
             "class": "ml1",
