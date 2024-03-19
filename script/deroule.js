@@ -73,13 +73,13 @@ document.addEventListener("DOMContentLoaded", function () {
             heures.forEach(function(heure) {
                 switch (heure.value) {
                     case '10:00':
-                        heure.value = lang === 'en' ? '10:00' : '10:00';
+                        heure.value = lang === 'en' ? '10:00 AM' : '10:00';
                         break;
                     case '11:00':
-                        heure.value = lang === 'en' ? '11:00' : '11:00';
+                        heure.value = lang === 'en' ? '11:00 AM' : '11:00';
                         break;
                     case '12:00':
-                        heure.value = lang === 'en' ? '12:00' : '12:00';
+                        heure.value = lang === 'en' ? '12:00 AM' : '12:00';
                         break;
                     case '13:00':
                         heure.value = lang === 'en' ? '1:00 PM' : '13:00';
