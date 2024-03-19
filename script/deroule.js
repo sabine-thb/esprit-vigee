@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 currentLang = lang;
                 updatePage(); // mise à jour du cntenu de la page après avoir changé la lg
                 localStorage.setItem("lang", lang);
+                var submitBtn = document.querySelector('.submit');
+                    if (lang === 'en') {
+                        submitBtn.value = "Confirm";
+                    } else if (lang === 'fr') {
+                        submitBtn.value = "Valider";
+                    }
                  
-    var submitBtn = document.querySelector('.submit');
-    if (lang === 'en') {
-        submitBtn.value = "Confirm";
-    } else if (lang === 'fr') {
-        submitBtn.value = "Valider";
-    }
 
             }
 
@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         translation.text = translation.text.replace(/\\n/g, '<br>');
                         element.innerHTML = translation.text; // Utilise innerHTML pour interpréter les balises HTML
                     }
+                    
                 }
             }
             
