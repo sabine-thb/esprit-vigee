@@ -276,12 +276,16 @@
             "class": "btnb1",
             "text": "Date of visit"
         },
-        "date": {
-            "class": "date",
-            "text": "Date :  "
+        "dateLabel": {
+            "class": "dateLabel",
+            "text": "Date : the   "
         },
-        "nbBillets": {
-            "class": "nbBillets",
+        "horaireLabel": {
+            "class": "horaireLabel",
+            "text": "at"
+        },
+        "nbBilletsLabel": {
+            "class": "nbBilletsLabel",
             "text": "Quantity of tickets : "
         },
         "btnb2": {
@@ -666,12 +670,16 @@
             "class": "btnb1",
             "text": "Date de visite"
         },
-        "date": {
-            "class": "date",
+        "dateLabel": {
+            "class": "dateLabel",
             "text": "Date : le "
         },
-        "nbBillets": {
-            "class": "nbBillets",
+        "horaireLabel": {
+            "class": "horaireLabel",
+            "text": "à"
+        },
+        "nbBilletsLabel": {
+            "class": "nbBilletsLabel",
             "text": "Nombre de billets :"
         },
         

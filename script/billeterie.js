@@ -13,11 +13,11 @@ function collecterDonnees(etape) {
 }
 
 
+
 // Fonction pour afficher les données collectées
 function afficherDonnees(donnees) {
     console.log(donnees);
 }
-
 
 
 function passerEtape(etapeActuelle, etapeSuivante) {
@@ -31,6 +31,7 @@ function passerEtape(etapeActuelle, etapeSuivante) {
 
     // Afficher les données collectées
     afficherDonnees(donnees);
+    console.log(etapeSuivante);
 
     // Mettre à jour les éléments HTML avec les données collectées
     if (etapeSuivante === 'etape2') {

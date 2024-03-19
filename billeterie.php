@@ -180,8 +180,15 @@
                     <div class= recapTxt>
                         <p class="titleBillet"></p>
                         <p class="obtention"></p>
-                        <p class="date" style="display: none;"><span id="dateChoisie"></span> à <span id="horaireChoisi"></span></p>
-                        <p class="nbBillets" style="display: none;"> <span id="nombreBillets"></span></p>
+                        <p class="date" style="display:none">
+                            <span class="dateLabel"></span>
+                            <span id="dateChoisie"></span> 
+                            <span class="horaireLabel"></span> 
+                            <span id="horaireChoisi"></span></p>
+                        <p class="nbBillets" style="display:none"> 
+                            <span class="nbBilletsLabel"></span>
+                            <span id="nombreBillets"></span>
+                        </p>
                     </div>
                 </div>
 
