@@ -33,21 +33,21 @@
             </div>
             <nav class="mobile-menu">
             <ul>
-              <li><a href="index.html" class="burgerLinks l1">Accueil</a></li>
-              <li><a href="gallerie.html" class="burgerLinks l2">Gallerie</a></li>
-              <li><a href="concept.html" class="burgerLinks l3">Le concept</a></li>
-              <li><a href="billeterie.php" class="burgerLinks l4">Billeterie</a></li>
+              <li><a href="index.html" class="burgerLinks l1"></a></li>
+              <li><a href="gallerie.html" class="burgerLinks l2"></a></li>
+              <li><a href="concept.html" class="burgerLinks l3"></a></li>
+              <li><a href="billeterie.php" class="burgerLinks l4"></a></li>
               <li><a href="contact.html" class="burgerLinks l5">Contact</a></li>									
             </ul>
           </nav>
         
         <div class="nav2">
-          <a href="gallerie.html"  class="navLink 1 l22">Gallerie</a>
-          <a href="concept.html"  class="navLink 2 l33">Le concept</a>
+          <a href="gallerie.html"  class="navLink 1 l22"></a>
+          <a href="concept.html"  class="navLink 2 l33"></a>
           <a href="index.html" >
             <img src="./styles/images/logo.png" class="logo" alt="logo de l'exposition">
           </a>
-          <a href="billeterie.php"  class="navLink 3 l44">Billeterie</a>
+          <a href="billeterie.php"  class="navLink 3 l44"></a>
           <a href="contact.html"  class="navLink 4 l55">Contact</a>
 
 
@@ -66,16 +66,16 @@
             
     </header>
     <section class="billeterie">
-        <h1 class="title b1">Billeterie</h1>
+        <h1 class="title b1"></h1>
 
         <div class="dropdown">
       <img class="lang-icon" src="./styles/images/langue2.png" alt="Image">
-      <button id="dropdownBtn" class="dropbtn dpbtt">Langage <img class="fl-icon" src="./styles/images/flechefren.png"
+      <button id="dropdownBtn" class="dropbtn dpbtt"><span class="lang"></span> <img class="fl-icon" src="./styles/images/flechefren.png"
           alt="Image">
       </button>
       <div id="dropdownContent" class="dropdown-content">
-        <a href="" class="fr fr1">Français</a>
-        <a href="" class="en en2">Anglais</a>
+        <a href="" class="fr fr1"></a>
+        <a href="" class="en en2"></a>
       </div>
     </div>
         <div class="degrade"></div>
@@ -84,9 +84,9 @@
             <a href="#etape2" onclick="afficherEtape('etape2')" class="navLinkBilleterie">Nombre de billets</a>
             <a href="#etape3" onclick="afficherEtape('etape3')"class="navLinkBilleterie">Coordonnées</a> -->
 
-            <button class="navButton btnb1" onclick="afficherEtape('etape1')">Date de visite</button>
-            <button class="navButton btnb2" onclick="afficherEtape('etape2')">Nombre de billets</button>
-            <button class="navButton btnb3" onclick="afficherEtape('etape3')">Coordonnées</button>
+            <button class="navButton btnb1" onclick="afficherEtape('etape1')"></button>
+            <button class="navButton btnb2" onclick="afficherEtape('etape2')"></button>
+            <button class="navButton btnb3" onclick="afficherEtape('etape3')"></button>
         </div>
         <?php if (isset($_GET["resa"] )){  
             echo "<p class=\"reponse repor\">Votre réservation a bien été prise en compte. Un mail vous a été transmis.</p>";
@@ -108,11 +108,11 @@
                 <form action="traiteResa.php" method="POST">
                     <div class="etape" id="etape1">
                         <p>
-                            <label for="date" class="datechoose">Choisissez une date :</label>
+                            <label for="date" class="datechoose"></label>
                             <input type="date" id="date" name="date">
                         </p>
                         <p>
-                            <label for="date" class="timechoose">Choisissez un horaire :</label><br>
+                            <label for="date" class="timechoose"></label><br>
                             <div class="horaires">
                                 
                                 <input type="radio" id="radio1" name="horaire" value="10:00" >
@@ -140,7 +140,7 @@
                     
                     <div class="etape" id="etape2" style="display: none;">
                         <p>
-                            <label for="number" class="numberbill">Nombre de billets uniques pour l'exposition :</label>
+                            <label for="number" class="numberbill"></label>
                         </p>
                         <p class="numberBillets">
                             <button class='decrement qteTotale' type='button'>-</button>
@@ -150,15 +150,15 @@
                         </p>
                             
                         </p>
-                        <button type="button" class="valid two" onclick="passerEtape('etape2', 'etape3')">Valider</button>
+                        <button type="button" class="valid two" onclick="passerEtape('etape2', 'etape3')"></button>
                     </div>
                     <div class="etape" id="etape3" style="display: none;">
                         <p>
-                            <label for="nom" class="namee">Nom : </label>
+                            <label for="nom" class="namee"> </label>
                             <input type="text" id="nom" name="nom" reqauired>
                         </p>
                         <p>
-                            <label for="prenom" class="firstname">Prénom :</label>
+                            <label for="prenom" class="firstname"></label>
                             <input type="text" id="prenom" name="prenom" >
                         </p>
                         <p>
@@ -167,7 +167,7 @@
                         </p>
                         <p>
                             <input type="checkbox" id="conditions" name="conditions" required>
-                            <label for="conditions" class="conditionss">J’accepte les conditions générales de ventes de l’exposition Esprit Vigée</label>
+                            <label for="conditions" class="conditionss"></label>
                         </p>
                         <p>
                             <input type="submit" value="valider" class="submit">
@@ -178,10 +178,10 @@
                 <div class="recap">
                     <img src="./styles/images/afficheExpo.png" class="affiche" alt="">
                     <div class= recapTxt>
-                        <p class="titleBillet">Exposition Esprit Vigée</p>
-                        <p class="obtention">Mode d'obtention : e-ticket, gratuit</p>
-                        <p class="date" style="display: none;">Date : le <span id="dateChoisie"></span> à <span id="horaireChoisi"></span></p>
-                        <p class="nbBillets" style="display: none;">Nombre de billets : <span id="nombreBillets"></span></p>
+                        <p class="titleBillet"></p>
+                        <p class="obtention"></p>
+                        <p class="date" style="display: none;"><span id="dateChoisie"></span> à <span id="horaireChoisi"></span></p>
+                        <p class="nbBillets" style="display: none;"> <span id="nombreBillets"></span></p>
                     </div>
                 </div>
 
@@ -195,17 +195,17 @@
                 <img src="./styles/images/logo.png" class="logoFooter" alt="">
                 <div>
                     <p class="titleExpo">Esprit Vigée</p>
-                    <p class="agence">Une exposition de Gallerie Past'elle</p>
+                    <p class="agence"></p>
                 </div>
 
             </div>
 
             <div class="pages">
-                <a href="ML.html" class="footerLink bold f1">Mentions légales</a>
-                <a href="conditionsVente.html" class="footerLink bold f2">Conditions générales de vente</a>
-                <a href="gallerie.html" class="footerLink f3">Gallerie</a>
-                <a href="concept.html" class="footerLink f4">Le concept</a>
-                <a href="billeterie.php" class="footerLink f5">Billeterie</a>
+                <a href="ML.html" class="footerLink bold f1"></a>
+                <a href="conditionsVente.html" class="footerLink bold f2"></a>
+                <a href="gallerie.html" class="footerLink f3"></a>
+                <a href="concept.html" class="footerLink f4"></a>
+                <a href="billeterie.php" class="footerLink f5"></a>
                 <a href="contact.html" class="footerLink f6">Contact</a>
             </div>
             <div class="reseaux">

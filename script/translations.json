@@ -264,6 +264,10 @@
             "class": "descrGallerie",
             "text": "Excerpt from the paintings presented during the interactive exhibition"
         },
+        "oeuvre": {
+            "class": "oeuvre",
+            "text": "Pieces"
+        },
         "b1": {
             "class": "b1",
             "text": "Tickets"
@@ -271,6 +275,14 @@
         "btnb1": {
             "class": "btnb1",
             "text": "Date of visit"
+        },
+        "date": {
+            "class": "date",
+            "text": "Date :  "
+        },
+        "nbBillets": {
+            "class": "nbBillets",
+            "text": "Quantity of tickets : "
         },
         "btnb2": {
             "class": "btnb2",
@@ -642,6 +654,10 @@
             "class": "descrGallerie",
             "text": "Extrait des peintures présentées durant l’exposition interactive"
         },
+        "oeuvre": {
+            "class": "oeuvre",
+            "text": "Les <br> oeuvres"
+        },
         "b1": {
             "class": "b1",
             "text": "Billeterie"
@@ -650,6 +666,15 @@
             "class": "btnb1",
             "text": "Date de visite"
         },
+        "date": {
+            "class": "date",
+            "text": "Date : le "
+        },
+        "nbBillets": {
+            "class": "nbBillets",
+            "text": "Nombre de billets :"
+        },
+        
         "btnb2": {
             "class": "btnb2",
             "text": "Nombre de billets"
