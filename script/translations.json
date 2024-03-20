@@ -366,7 +366,7 @@
         },
         "rep1": {
             "class": "rep1",
-            "text": "The email you entered is invalid "
+            "text": "The email you entered is invalid. "
         },
         "rep2": {
             "class": "rep2",
@@ -378,7 +378,7 @@
         },
         "conditions": {
             "class": "conditionss",
-            "text": "I accept the general conditions of sale of the Esprit Vigée exhibition"
+            "text": "I accept the general conditions of sale of the Esprit Vigée exhibition."
         },
         "namee": {
             "class": "namee",
