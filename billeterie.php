@@ -88,6 +88,8 @@
             <button class="navButton btnb2" onclick="afficherEtape('etape2')"></button>
             <button class="navButton btnb3" onclick="afficherEtape('etape3')"></button>
         </div>
+        <?php date_default_timezone_set('Europe/Paris'); // Définit le fuseau horaire sur celui de Paris
+        ?>
         <?php if (isset($_GET["resa"] )){  
             echo "<p class=\"reponse repor\">Votre réservation a bien été prise en compte. Un mail vous a été transmis.</p>";
         } 
@@ -165,6 +167,7 @@
                             <label for="mail" class="mail">Adresse mail :</label>
                             <input type="mail" id="mail" name="mail" >
                         </p>
+                        <input type="hidden" name="dateResa" value="<?= date('Y-m-d H:i:s') ?>">
                         <p>
                             <input type="checkbox" id="conditions" name="conditions" required>
                             <label for="conditions" class="conditionss"></label>

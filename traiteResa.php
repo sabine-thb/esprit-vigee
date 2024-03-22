@@ -1,5 +1,8 @@
 <?php
 
+
+date_default_timezone_set('Europe/Paris'); // Définit le fuseau horaire sur celui de Paris
+        
 // Vérification des champs obligatoires
 if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['mail']) || empty($_POST['tickets']) || empty($_POST['date']) || empty($_POST['horaire'])) {
     // Au moins un des champs obligatoires est vide
@@ -11,6 +14,7 @@ if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['mail']) || 
     // Tous les champs obligatoires sont remplis, vous pouvez continuer le traitement
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
+    $dateResa = $_POST['dateResa'];
     $mail = $_POST['mail'];
     $tickets = $_POST['tickets'];
     $date = $_POST['date'];
@@ -39,46 +43,47 @@ if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['mail']) || 
     $reservationData = array(
         'nom' => $nom,
         'prenom' => $prenom,
+        'dateResa' => $dateResa, // Date et heure actuelles
         'mail' => $mail,
         'tickets' => $tickets,
         'date' => $date,
         'horaire' => $horaire
     );
 
-    // Convertir le tableau en format JSON
+    // // Convertir le tableau en format JSON
     $jsonData = json_encode($reservationData);
 
-    // URL de votre API
-    $apiUrl = 'http://localhost/api-expo/index.php/reservation';
+    // // URL de votre API
+    $apiUrl = 'https://expo-vigee.thibout.butmmi.o2switch.site/api-expo/index.php/reservation';
 
-    // Initialisation de cURL
+    // // Initialisation de cURL
     $curl = curl_init($apiUrl);
 
-    // Configuration de la requête cURL
+    // // Configuration de la requête cURL
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_POST, true);
     curl_setopt($curl, CURLOPT_POSTFIELDS, $jsonData);
     curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
 
-    // Exécution de la requête
+    // // Exécution de la requête
     $response = curl_exec($curl);
 
 
-    // Vérification des éventuelles erreurs cURL
+    // // Vérification des éventuelles erreurs cURL
         if ($response === false) {
             echo 'Erreur cURL : ' . curl_error($curl);
         }
 
-        // Affichage de la réponse de l'API (si nécessaire)
+    //     // Affichage de la réponse de l'API (si nécessaire)
         echo 'Réponse de l\'API : ' . $response;
 
-    // Fermeture de la session cURL
+    // // Fermeture de la session cURL
     curl_close($curl);
 
-    // Traitement de la réponse de l'API (si nécessaire)
-    // Vous pouvez vérifier $response pour voir la réponse de l'API
+    // // Traitement de la réponse de l'API (si nécessaire)
+    // // Vous pouvez vérifier $response pour voir la réponse de l'API
 
-    // Redirection vers la page de succès
+    // // Redirection vers la page de succès
     header('Location: billeterie.php?resa=ok');
     exit(); // Arrêter le script
 }
