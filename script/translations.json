@@ -56,10 +56,6 @@
             "class": "reserve",
             "text": "Reserve !"
         },
-        "agence": {
-            "class": "agence",
-            "text": "An exhibition by Gallerie Past'elle"
-        },
         "titleconcept": {
             "class": "titleconcept",
             "text": "The <br>Concept"
@@ -102,11 +98,11 @@
         },
         "cml2": {
             "class": "cml2",
-            "text": "Graphic design : Jade Célestine, Sabine Thibout <br> <br>Development - front : Rihab Bouazzaoui, Sabine Thibout et Clément Mbarga Minsi<br><br> Development-back : Sabine Thibout<br><br>  Graphics: Enzo Fortes, Jade Célestine <br> "
+            "text": "Graphic design : Jade Célestine, Sabine Thibout <br> <br>Development-front : Rihab Bouazzaoui, Sabine Thibout<br><br> Development-back : Sabine Thibout<br><br>  Graphics: Enzo Fortes, Jade Célestine <br> <br>Communication : Ahmed-Amine Sakkal"
         },
         "cml3": {
             "class": "cml3",
-            "text": "Data processing, hosting and related activities Foreign company not registered in the Trade and Companies Register <br><br> 88 COLIN P. KELLY JR ST CA 94107 SAN FRANCISCO UNITED STATES"
+            "text": "Host: GitHub INC <br><br>Data processing, hosting and related activities Foreign company not registered in the Trade and Companies Register <br><br> 88 COLIN P. KELLY JR ST CA 94107 SAN FRANCISCO UNITED STATES"
         },
         "cml4": {
             "class": "cml4",
@@ -295,6 +291,10 @@
         "radio9": {
             "class": "radio9",
             "text": "6 PM"
+        },
+        "expositionde": {
+            "class": "expositionde",
+            "text": "An exhibition of"
         },
 
 
@@ -491,10 +491,7 @@
             "class": "reserve",
             "text": "Réserve !"
         },
-        "agence": {
-            "class": "agence",
-            "text": "Une exposition de Gallerie Past'elle"
-        },
+        
         "titleconcept": {
             "class": "titleconcept",
             "text": "Le<br>Concept"
@@ -537,7 +534,7 @@
         },
         "cml2": {
             "class": "cml2",
-            "text": "Design graphique : Jade Célestine, Sabine Thibout <br> <br> Développement- front : Rihab Bouazzaoui, Sabine Thibout et Clément Mbarga Minsi<br><br> Développement-back : Sabine Thibout<br><br> Graphisme : Enzo Fortes, Jade Célestine <br>"
+            "text": "Design graphique : Jade Célestine, Sabine Thibout <br> <br> Développement front : Rihab Bouazzaoui, Sabine Thibout<br><br> Développement back : Sabine Thibout<br><br> Graphisme : Enzo Fortes, Jade Célestine <br><br>Communication : Ahmed-Amine Sakkal"
         },
         "cml3": {
             "class": "cml3",
@@ -551,7 +548,10 @@
             "class": "cml5",
             "text": "Le Règlement Général sur la Protection des Données (RGPD) ne s'applique pas à ce site internet. Le nom de domaine esprit-vigee est une marque déposée et protégée par le droit d'auteur, toute reproduction est interdite."
         },
-
+        "expositionde": {
+            "class": "expositionde",
+            "text": "Une exposition de"
+        },
 
 
         "tha": {
@@ -560,7 +560,7 @@
         },
         "tgg": {
             "class": "tgg",
-            "text": "Gallerie - Esprit Vigée"
+            "text": "Galerie - Esprit Vigée"
         },
         "tcv": {
             "class": "tcv",
@@ -580,7 +580,7 @@
         },
         "l2": {
             "class": "l2",
-            "text": "Gallerie"
+            "text": "Galerie"
         },
         "l3": {
             "class": "l3",
@@ -596,7 +596,7 @@
         },
         "l22": {
             "class": "l22",
-            "text": "Gallerie"
+            "text": "Galerie"
         },
         "l33": {
             "class": "l33",
@@ -620,7 +620,7 @@
         },
         "f3": {
             "class": "f3",
-            "text": "Gallerie"
+            "text": "Galerie"
         },
         "f4": {
             "class": "f4",

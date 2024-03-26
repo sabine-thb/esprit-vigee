@@ -1,234 +1,241 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="tha">Accueil - Esprit Vigée</title>
-    <link rel="stylesheet" href="./styles/all.css">
-    <link rel="stylesheet" href="./styles/menu.css">
-    <link rel="stylesheet" href="./styles/accueil.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="icon" href="./styles/images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="tha">Accueil - Esprit Vigée</title>
+  <link rel="stylesheet" href="./styles/all.css">
+  <link rel="stylesheet" href="./styles/menu.css">
+  <link rel="stylesheet" href="./styles/accueil.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="icon" href="./styles/images/favicon.ico">
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    
+
 </head>
+
 <body>
-    <header class="halo-container">
-        <div class="nav1">
-          <a href="index.html" class="logoContainer">
-            <img src="./styles/images/logo.png" class="logo" alt="logo de l'exposition">
-          </a>
-          <div class="mobile-nav-button one">
-            <div class="mobile-nav-button__line"></div>
-            <div class="mobile-nav-button__line"></div>
-            <div class="mobile-nav-button__line"></div>
-          </div>
+  <header class="halo-container">
+    <div class="nav1">
+      <a href="index.html" class="logoContainer">
+        <img src="./styles/images/logo.png" class="logo" alt="logo de l'exposition">
+      </a>
+      <div class="mobile-nav-button one">
+        <div class="mobile-nav-button__line"></div>
+        <div class="mobile-nav-button__line"></div>
+        <div class="mobile-nav-button__line"></div>
+      </div>
+    </div>
+    <nav class="mobile-menu">
+      <ul>
+        <li><a href="index.html" class="burgerLinks l1"></a></li>
+        <li><a href="gallerie.html" class="burgerLinks l2"></a></li>
+        <li><a href="concept.html" class="burgerLinks l3"></a></li>
+        <li><a href="billeterie.php" class="burgerLinks l4"></a></li>
+        <li><a href="contact.html" class="burgerLinks l5"></a></li>
+      </ul>
+    </nav>
+
+    <div class="nav2">
+      <a href="gallerie.html" class="navLink 1 l22"></a>
+      <a href="concept.html" class="navLink 2 l33"></a>
+      <a href="index.html">
+        <img src="./styles/images/logo.png" class="logo" alt="logo de l'exposition">
+      </a>
+      <a href="billeterie.php" class="navLink 3 l44"></a>
+      <a href="contact.html" class="navLink 4 l55"></a>
+
+
+    </div>
+    <div class="scrollNav">
+      <div class="mobile-nav-button two">
+        <div class="mobile-nav-button__line"></div>
+        <div class="mobile-nav-button__line"></div>
+        <div class="mobile-nav-button__line"></div>
+      </div>
+    </div>
+
+    </div>
+
+
+    <div class="headerText">
+      <p class="descrExpo"></p>
+      <h1 class="title">Esprit <br>vigée</h1>
+    </div>
+
+
+    <div class="dropdown">
+      <img class="lang-icon" src="./styles/images/langue2.png" alt="Image">
+      <button id="dropdownBtn" class="dropbtn"><span class="lang"></span>
+        <img class="fl-icon" src="./styles/images/flechefren.png" alt="Image">
+      </button>
+      <div id="dropdownContent" class="dropdown-content">
+        <a href="" class="fr fr1"></a>
+        <a href="" class="en en2"></a>
+      </div>
+    </div>
+    <div class="slider-visible">
+
+
+
+      <div class="slider-total">
+        <!-- CLONE PRÉSENT AU DÉBUT DU SLIDER, VISUELLEMENT IDENTIQUE À LA SLIDE RÉELLE 3 -->
+        <div class="slide clone">
+          <img src="./styles/images/slider-3.png" class="photoSlider three" alt="">
         </div>
-          <nav class="mobile-menu">
-            <ul>
-              <li><a href="index.html" class="burgerLinks l1"></a></li>
-              <li><a href="gallerie.html" class="burgerLinks l2"></a></li>
-              <li><a href="concept.html" class="burgerLinks l3"></a></li>
-              <li><a href="billeterie.php" class="burgerLinks l4"></a></li>
-              <li><a href="contact.html" class="burgerLinks l5"></a></li>									
-            </ul>
-          </nav>
-        
-        <div class="nav2">
-          <a href="gallerie.html"  class="navLink 1 l22"></a>
-          <a href="concept.html"  class="navLink 2 l33"></a>
-          <a href="index.html" >
-            <img src="./styles/images/logo.png" class="logo" alt="logo de l'exposition">
-          </a>
-          <a href="billeterie.php"  class="navLink 3 l44"></a>
-          <a href="contact.html"  class="navLink 4 l55"></a>
 
-
+        <!-- LES 3 SLIDES RÉELLES -->
+        <div class="slide reel">
+          <img src="./styles/images/slider-1.png" class="photoSlider one" alt="">
+          <div class="legend">Portrait de Lady Hamilton, 1785</div>
+          <div class="degSlider"></div>
         </div>
-        <div class="scrollNav">
-          <div class="mobile-nav-button two">
-              <div class="mobile-nav-button__line"></div>
-              <div class="mobile-nav-button__line"></div>
-              <div class="mobile-nav-button__line"></div>
-            </div>
-          </div>
-
+        <div class="slide reel">
+          <img src="./styles/images/slider-2.png" class="photoSlider two" alt="">
+          <div class="legend">Portrait d’une femme, 1803</div>
+          <div class="degSlider"></div>
+        </div>
+        <div class="slide reel">
+          <img src="./styles/images/slider-3.png" class="photoSlider three" alt="">
+          <div class="legend three">Portrait de Mohammed Dervish Khan, 1788</div>
+          <div class="degSlider"></div>
         </div>
 
-
-          <div class="headerText">
-             <p class="descrExpo"></p>
-             <h1 class="title">Esprit <br>vigée</h1>
-          </div>
-          
-     
-<div class="dropdown">
-  <img class="lang-icon" src="./styles/images/langue2.png" alt="Image">
-  <button id="dropdownBtn" class="dropbtn"><span class="lang"></span>
-    <img class="fl-icon" src="./styles/images/flechefren.png" alt="Image">
-  </button>
-  <div id="dropdownContent" class="dropdown-content">
-    <a href="" class="fr fr1"></a>
-    <a href="" class="en en2"></a>
-  </div>
-</div>
-        <div class="slider-visible">
-          
-
-          
-          <div class="slider-total">
-              <!-- CLONE PRÉSENT AU DÉBUT DU SLIDER, VISUELLEMENT IDENTIQUE À LA SLIDE RÉELLE 3 -->
-              <div class="slide clone">
-                <img src="./styles/images/slider-3.png" class="photoSlider three" alt="">
-              </div>
-
-              <!-- LES 3 SLIDES RÉELLES -->
-              <div class="slide reel">
-                 <img src="./styles/images/slider-1.png" class="photoSlider one" alt="">
-                 <div class="legend">Portrait de Lady Hamilton, 1785</div>
-                 <div class="degSlider"></div>
-              </div>
-              <div class="slide reel">
-                 <img src="./styles/images/slider-2.png" class="photoSlider two" alt="">
-                 <div class="legend">Portrait d’une femme, 1803</div>
-                 <div class="degSlider"></div>
-              </div>
-              <div class="slide reel">
-                 <img src="./styles/images/slider-3.png" class="photoSlider three" alt="">
-                 <div class="legend three">Portrait de Mohammed Dervish Khan, 1788</div>
-                 <div class="degSlider"></div>
-              </div>
-            
-            <!-- CLONE PRÉSENT À LA FIN DU SLIDER, VISUELLEMENT IDENTIQUE À LA SLIDE RÉELLE 1 -->
-              <div class="slide clone">
-                <img src="./styles/images/slider-1.png" class="photoSlider one" alt="">
-             </div>
-          </div>
-
-          <img src="./styles/images/fleche.svg" class="arrow right" alt="">
-          <img src="./styles/images/fleche.svg" class="arrow left" alt="">
-
-
+        <!-- CLONE PRÉSENT À LA FIN DU SLIDER, VISUELLEMENT IDENTIQUE À LA SLIDE RÉELLE 1 -->
+        <div class="slide clone">
+          <img src="./styles/images/slider-1.png" class="photoSlider one" alt="">
         </div>
-        
-
-
-    </header>
-    <section class="section1">
-      <div class="dark"></div>
-      <h2 class="titleSection"></h2>
-      <div class="painterDescr">
-        <p class="p1"></p>
-        <p class="p2"></p>
-        <p class="p3"></p>
-        <p class="p4"></p>  
       </div>
 
-      <div class="gradient"></div>
-    </section>
-    <section class="section2">
-      <div class="titleContainer">
-        <div class="line"></div>
-        <div class="titleSection2"></div>
-        <div class="line"></div>
+      <img src="./styles/images/fleche.svg" class="arrow right" alt="">
+      <img src="./styles/images/fleche.svg" class="arrow left" alt="">
+
+
+    </div>
+
+
+
+  </header>
+  <section class="section1">
+    <div class="dark"></div>
+    <h2 class="titleSection"></h2>
+    <div class="painterDescr">
+      <p class="p1"></p>
+      <p class="p2"></p>
+      <p class="p3"></p>
+      <p class="p4"></p>
+    </div>
+
+    <div class="gradient"></div>
+  </section>
+  <section class="section2">
+    <div class="titleContainer">
+      <div class="line"></div>
+      <div class="titleSection2"></div>
+      <div class="line"></div>
+    </div>
+
+    <div class="allCards">
+      <div class="horizontalCards">
+        <div class="card1">
+          <div class="titleCard one">La paix ramenant l’abondance</div>
+        </div>
+        <div class="card2">
+          <div class="titleCard two">Tendresse maternelle</div>
+        </div>
+      </div>
+      <div class="verticalCard">
+        <div class="card3">
+          <div class="titleCard three">Duchesse de Polignac</div>
+        </div>
+        <a href="gallerie.html" class="linkGallerie two"></a>
+      </div>
+      <a href="gallerie.html" class="linkGallerie one"></a>
+    </div>
+
+
+  </section>
+  <section class="section3">
+    <div class="dark two"></div>
+    <div class="flexContainer">
+      <div class="immersion">
+        <div class="immersionTitle"></div>
+        <div class="immersionContain">
+          <p class="p5">.</p>
+          <p class="p6"></p>
+          <p class="p7"></p>
+        </div>
+        <a href="billeterie.php" class="reserve"></a>
+      </div>
+      <div class="imagesTabContainer">
+        <div class="imagesTab">
+          <img src="./styles/images/tab2.png" class="imageTab one" alt="">
+          <img src="./styles/images/tab1.png" class="imageTab two" alt="">
+        </div>
+
       </div>
 
-      <div class="allCards">
-         <div class="horizontalCards">
-           <div class="card1">
-              <div class="titleCard one">La paix ramenant l’abondance</div>
-           </div>
-           <div class="card2">
-              <div class="titleCard two">Tendresse maternelle</div>
-           </div>
-         </div>
-         <div class="verticalCard">
-            <div class="card3">
-              <div class="titleCard three">Duchesse de Polignac</div>
-            </div>
-            <a href="gallerie.html" class="linkGallerie two"></a>
-         </div>
-         <a href="gallerie.html" class="linkGallerie one"></a>
-      </div>
-      
-      
-    </section>
-    <section class="section3">
-      <div class="dark two"></div>
-      <div class="flexContainer">
-        <div class="immersion">
-          <div class="immersionTitle"></div>
-          <div class="immersionContain">
-            <p class="p5">.</p>
-            <p class="p6"></p>
-            <p class="p7"></p>
-          </div>
-          <a href="billeterie.php" class="reserve"></a>
-        </div>
-        <div class="imagesTabContainer">
-          <div class="imagesTab">
-            <img src="./styles/images/tab2.png" class="imageTab one" alt="">
-            <img src="./styles/images/tab1.png" class="imageTab two" alt="">
-          </div>
-
-        </div>
-        
-      </div>
-    </section>
-    <footer>
-        <div class="logoContainer">
-          <img src="./styles/images/logo.png" class="logoFooter" alt="">
-          <div>
-             <p class="titleExpo">Esprit Vigée</p>
-             <p class="agence"></p>
-          </div>
+    </div>
+  </section>
+  <footer>
+    <div class="logoContainer">
+      <img src="./styles/images/logo.png" class="logoFooter" alt="">
+      <div>
+        <p class="titleExpo">Esprit Vigée</p>
+        <p class="agence"><span class="expositionde"></span>
           
-        </div>
-        
-        <div class="pages">
-          <a href="ML.html" class="footerLink bold f1"></a>
-          <a href="conditionsVente.html" class="footerLink bold f2"></a>
-          <a href="gallerie.html" class="footerLink f3"></a>
-          <a href="concept.html" class="footerLink f4"></a>
-          <a href="billeterie.php" class="footerLink f5"></a>
-          <a href="contact.html" class="footerLink f6"></a>
+         <a class="liengp" href="https://galeriepastelle.com"
+            style="text-decoration: underline; color:white;">Galerie Past'elle</a></p>
+
       </div>
-        <div class="reseaux">
-            <p class="bold contact">Contact</p>
-            <div class="linksReseau">
-              <a href="" class="linkReseau">
-                <img src="./styles/images/facebook.png"  class="reseau" alt="lien vers facebook">
-              </a>
-              <a href="" class="linkReseau">
-                <img src="./styles/images/pinterest.png" class="reseau"alt="lien vers pinterest">
-              </a>
-              <a href="" class="linkReseau">
-                <img src="./styles/images/instagram.png" class="reseau" alt="lien vers instagram">
-              </a>
 
-          </div>
-          
-        </div>
+    </div>
 
-    </footer>
+    <div class="pages">
+      <a href="ML.html" class="footerLink bold f1"></a>
+      <a href="conditionsVente.html" class="footerLink bold f2"></a>
+      <a href="gallerie.html" class="footerLink f3"></a>
+      <a href="concept.html" class="footerLink f4"></a>
+      <a href="billeterie.php" class="footerLink f5"></a>
+      <a href="contact.html" class="footerLink f6"></a>
+    </div>
+    <div class="reseaux">
+      <p class="bold contact">Contact</p>
+      <div class="linksReseau">
+        <a href="" class="linkReseau">
+          <img src="./styles/images/facebook.png" class="reseau" alt="lien vers facebook">
+        </a>
+        <a href="" class="linkReseau">
+          <img src="./styles/images/pinterest.png" class="reseau" alt="lien vers pinterest">
+        </a>
+        <a href="" class="linkReseau">
+          <img src="./styles/images/instagram.png" class="reseau" alt="lien vers instagram">
+        </a>
 
-    
-    
-    <script src="./script/menu.js"></script>
-    <script src="./script/slider.js"></script>
-    <script src="./script/halo.js"></script>
-    <script src="./script/deroule.js"></script>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-    <script src="./script/animations/accueil.js"></script>
+    </div>
+
+  </footer>
+
+
+
+  <script src="./script/menu.js"></script>
+  <script src="./script/slider.js"></script>
+  <script src="./script/halo.js"></script>
+  <script src="./script/deroule.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+  <script src="./script/animations/accueil.js"></script>
 
 
 </body>
+
 </html>

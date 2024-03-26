@@ -220,9 +220,13 @@
             <div class="logoContainer">
                 <img src="./styles/images/logo.png" class="logoFooter" alt="">
                 <div>
-                    <p class="titleExpo">Esprit Vigée</p>
-                    <p class="agence"></p>
-                </div>
+        <p class="titleExpo">Esprit Vigée</p>
+        <p class="agence"><span class="expositionde"></span>
+          
+         <a class="liengp" href="galeriepastelle.com"
+            style="text-decoration: underline; color:white;">Galerie Past'elle</a></p>
+
+      </div>
 
             </div>
 
