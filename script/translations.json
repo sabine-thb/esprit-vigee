@@ -394,7 +394,7 @@
         },
         "numberbill": {
             "class": "numberbill",
-            "text": "Number of single tickets for the exhibition* :"
+            "text": "Number of single tickets for the exhibition : *"
         },
         "cond": {
             "class": "cond",
@@ -831,7 +831,7 @@
         },
         "numberbill": {
             "class": "numberbill",
-            "text": "Nombre de billets uniques pour l'exposition :"
+            "text": "Nombre de billets uniques pour l'exposition : *"
         },
         "cond": {
             "class": "cond",
