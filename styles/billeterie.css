@@ -135,7 +135,14 @@ input[type="radio"]:checked + label {
     border:none;
     cursor: pointer !important;
 }
-
+.required-message{
+    font-size: 0.8rem;
+    color: #434343;
+}
+.required{
+    color: #434343;
+font-size: 0.8rem;
+}
 
 .recap{
     display:flex;

@@ -338,11 +338,11 @@
         },
         "datechoose": {
             "class": "datechoose",
-            "text": "Choose a date :"
+            "text": "Choose a date* :"
         },
         "timechoose": {
             "class": "timechoose",
-            "text": "Choose a time :"
+            "text": "Choose a time* :"
         },
         "valid": {
             "class": "valid",
@@ -394,7 +394,7 @@
         },
         "numberbill": {
             "class": "numberbill",
-            "text": "Number of single tickets for the exhibition :"
+            "text": "Number of single tickets for the exhibition* :"
         },
         "cond": {
             "class": "cond",
@@ -427,6 +427,10 @@
         "cp7": {
             "class": "cp7",
             "text": "These terms and conditions are governed by French law. Any dispute relating to their application or interpretation shall be submitted to the competent courts of France. By reserving a ticket for the free art exhibition, the visitor acknowledges having read and accepted these terms and conditions of sale."
+        },
+        "required-message": {
+            "class": "required-message",
+            "text": "*All fields are mandatory:"
         }
     },
     "fr": {
@@ -771,11 +775,11 @@
         },
         "datechoose": {
             "class": "datechoose",
-            "text": "Choisissez une date :"
+            "text": "Choisissez une date * :"
         },
         "timechoose": {
             "class": "timechoose",
-            "text": "Choisissez un horaire :"
+            "text": "Choisissez un horaire * :"
         },
         "valid": {
             "class": "valid",

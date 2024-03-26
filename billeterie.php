@@ -111,10 +111,13 @@
                     <div class="etape" id="etape1">
                         <p>
                             <label for="date" class="datechoose"></label>
+
                             <input type="date" id="date" name="date">
                         </p>
                         <p>
+                            
                             <label for="date" class="timechoose"></label><br>
+                            
                             <div class="horaires">
                                 
                                 <input type="radio" id="radio1" name="horaire" value="10:00" >
@@ -141,11 +144,16 @@
                     </div>
                     
                     <div class="etape" id="etape2" style="display: none;">
+
                         <p>
-                            <label for="number" class="numberbill"></label>
+                            <label for="number" class="numberbill"> </label>
+
                         </p>
+                        
                         <p class="numberBillets">
+
                             <button class='decrement qteTotale' type='button'>-</button>
+
                             <input type="number" id="number" name="tickets" min='1' max='10' value="1" readonly >  
                             <button class='increment qteTotale' type='button'>+</button>
 
@@ -156,16 +164,22 @@
                     </div>
                     <div class="etape" id="etape3" style="display: none;">
                         <p>
-                            <label for="nom" class="namee"> </label>
+                            <label for="nom" class="namee"></label>
+                            <span class="required">*</span>
                             <input type="text" id="nom" name="nom" reqauired>
+
                         </p>
                         <p>
                             <label for="prenom" class="firstname"></label>
+                            <span class="required">*</span>
                             <input type="text" id="prenom" name="prenom" >
+
                         </p>
                         <p>
                             <label for="mail" class="mail">Adresse mail :</label>
+                            <span class="required">*</span>
                             <input type="mail" id="mail" name="mail" >
+
                         </p>
                         <input type="hidden" name="dateResa" value="<?= date('Y-m-d H:i:s') ?>">
                         <p>
@@ -175,6 +189,8 @@
                         <p>
                             <input type="submit" value="valider" class="submit">
                         </p>
+                        <p class="required-message">* Tous les champs marqués d'une étoile sont obligatoires.</p>
+
                     </div>
 
                 </form>

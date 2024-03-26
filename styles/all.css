@@ -99,6 +99,12 @@ header {
     z-index: 1000;
 }
 
+
+
+.dropdown:hover .dropdown-content {
+    top: -35px;
+    bottom: auto;
+}
 .dropbtn {
     background-color: rgb(116 116 116);
     color: white;
