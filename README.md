@@ -15,3 +15,21 @@ Ensuite, intégrez la base de donnée esprit_vigee.sql à votre phpmyadmin en lo
 Enfin, modifiez dans le fichier index.php de l'API les informations de connexion à la base de donnée (elles sont à deux endroits dans le fichier).
 
 Tapez ensuite dans votre navigateur http://localhost/esprit-vigee. Vous aurez ainsi accès directement à notre site de l'exposition esprit-vigee sur votre propre serveur local WAMP.
+
+# Lien du backoffice
+
+https://backoffice.esprit-vigee.com
+
+Login : admin 
+Mdp : admin
+
+# Lien de l'API
+https://api-expo.esprit-vigee.com/index.php/reservation
+
+
+
+
+
+
+
+
