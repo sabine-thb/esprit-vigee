@@ -1,5 +1,9 @@
 {
     "en": {
+        "skip-link": {
+            "class": "skip-link",
+            "text": "Go to content"
+        },
         "descrExpo": {
             "class": "descrExpo",
             "text": "An interactive exhibition about an invisible artist"
@@ -434,6 +438,10 @@
         }
     },
     "fr": {
+        "skip-link": {
+            "class": "skip-link",
+            "text": "Aller au contenu"
+        },
         "descrExpo": {
             "class": "descrExpo",
             "text": "Une exposition interactive sur une peintre invisible."

@@ -20,6 +20,7 @@
     
 </head>
 <body>
+    <a href="#contenu" class="skip-link"></a>
     <header class="halo-container">
             <div class="nav1">
                 <a href="index.html" class="logoContainer">
@@ -65,7 +66,7 @@
 
             
     </header>
-    <section class="billeterie">
+    <section class="billeterie" id="contenu">
         <h1 class="title b1"></h1>
 
         <div class="dropdown">
