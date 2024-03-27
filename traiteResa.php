@@ -10,6 +10,7 @@ if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['mail']) || 
 
     var_dump($_POST);
     exit(); // Arrêter le script
+
 } else {
     // Tous les champs obligatoires sont remplis, vous pouvez continuer le traitement
     $nom = $_POST['nom'];
@@ -54,7 +55,7 @@ if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['mail']) || 
     $jsonData = json_encode($reservationData);
 
     // // URL de votre API
-    $apiUrl = 'https://expo-vigee.thibout.butmmi.o2switch.site/api-expo/index.php/reservation';
+    $apiUrl = 'https://api-expo.esprit-vigee.com/index.php/reservation';
 
     // // Initialisation de cURL
     $curl = curl_init($apiUrl);
@@ -67,15 +68,17 @@ if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['mail']) || 
 
     // // Exécution de la requête
     $response = curl_exec($curl);
+    
+    // var_dump($response);
 
 
     // // Vérification des éventuelles erreurs cURL
-        if ($response === false) {
-            echo 'Erreur cURL : ' . curl_error($curl);
-        }
+        // if ($response === false) {
+        //     echo 'Erreur cURL : ' . curl_error($curl);
+        // }
 
     //     // Affichage de la réponse de l'API (si nécessaire)
-        echo 'Réponse de l\'API : ' . $response;
+        // echo 'Réponse de l\'API : ' . $response;
 
     // // Fermeture de la session cURL
     curl_close($curl);
@@ -83,9 +86,11 @@ if (empty($_POST['nom']) || empty($_POST['prenom']) || empty($_POST['mail']) || 
     // // Traitement de la réponse de l'API (si nécessaire)
     // // Vous pouvez vérifier $response pour voir la réponse de l'API
 
-    // // Redirection vers la page de succès
+    // Redirection vers la page de succès
     header('Location: billeterie.php?resa=ok');
+    
+    // echo"<a href='billeterie.php?resa=ok' >Retour billeterie</a>";
     exit(); // Arrêter le script
-}
+} 
 
 ?>

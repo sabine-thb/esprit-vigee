@@ -430,7 +430,7 @@
         },
         "required-message": {
             "class": "required-message",
-            "text": "*All fields are mandatory:"
+            "text": "*All fields are mandatory."
         }
     },
     "fr": {
