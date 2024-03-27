@@ -338,11 +338,11 @@
         },
         "datechoose": {
             "class": "datechoose",
-            "text": "Choose a date* :"
+            "text": "Choose a date : *"
         },
         "timechoose": {
             "class": "timechoose",
-            "text": "Choose a time* :"
+            "text": "Choose a time : *"
         },
         "valid": {
             "class": "valid",
@@ -775,11 +775,11 @@
         },
         "datechoose": {
             "class": "datechoose",
-            "text": "Choisissez une date * :"
+            "text": "Choisissez une date : *"
         },
         "timechoose": {
             "class": "timechoose",
-            "text": "Choisissez un horaire * :"
+            "text": "Choisissez un horaire : *"
         },
         "valid": {
             "class": "valid",
