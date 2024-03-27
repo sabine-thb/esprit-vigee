@@ -69,9 +69,9 @@
         <h1 class="title b1"></h1>
 
         <div class="dropdown">
-      <img class="lang-icon" src="./styles/images/langue2.png" alt="Image">
+      <img class="lang-icon" src="./styles/images/langue2.png" alt="globe monde">
       <button id="dropdownBtn" class="dropbtn dpbtt"><span class="lang"></span> <img class="fl-icon" src="./styles/images/flechefren.png"
-          alt="Image">
+          alt="fleche">
       </button>
       <div id="dropdownContent" class="dropdown-content">
         <a href="" class="fr fr1"></a>
@@ -195,7 +195,7 @@
 
                 </form>
                 <div class="recap">
-                    <img src="./styles/images/afficheExpo.png" class="affiche" alt="">
+                    <img src="./styles/images/afficheExpo.png" class="affiche" alt="ticket Vigée le brun">
                     <div class= recapTxt>
                         <p class="titleBillet"></p>
                         <p class="obtention"></p>
@@ -218,7 +218,7 @@
 
     <footer>
             <div class="logoContainer">
-                <img src="./styles/images/logo.png" class="logoFooter" alt="">
+                <img src="./styles/images/logo.png" class="logoFooter" alt="Logo de l'exposition">
                 <div>
         <p class="titleExpo">Esprit Vigée</p>
         <p class="agence"><span class="expositionde"></span>
